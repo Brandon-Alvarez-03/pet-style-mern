@@ -111,20 +111,17 @@ const Product = new Schema
 )
 ```
 ## Component Hierarchy (Caprice)
+[Flow Chart](https://www.figma.com/file/YJa4nQJAdoLtJ89YgJ5VX4/Data-Flow?node-id=0%3A1)
 
-https://whimsical.com/everfree-P4dkTQB4sykQrTkRmoBqX9
-
-![Screen Shot 2021-11-12 at 1 50 41 PM](https://user-images.githubusercontent.com/90531123/141532906-6f8046d3-b26d-4457-921f-234126942273.png)
+![Flow Chart](./img/flowchart.png)
 
 ---
 
 ## Wireframes & Branding (Caprice)
+[Wireframe](https://www.figma.com/file/AqD4o1McErCQNpwiEtu1LG/Untitled?node-id=0%3A1)
+![Home and Item pages](./img/homeAndItems.png)
+![Empty and Full Cart pages](./img/cart.png)
 
-https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A1
-
-![Screen Shot 2021-11-12 at 1 17 04 PM](https://user-images.githubusercontent.com/90531123/141529286-a175ae3c-1e1a-469b-8158-86de37ed976b.png)
-
-![Screen Shot 2021-11-12 at 2 30 20 PM](https://user-images.githubusercontent.com/90531123/141536904-64191867-03b6-4d4b-a387-c8ba05fbf0a3.png)
 
 
 ---
