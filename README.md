@@ -35,7 +35,7 @@
 -
 -
 
-## Data Schema (Sandy and Gary)
+## Data Schema
 
 Products:
 
@@ -116,32 +116,30 @@ https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A
 
 ![tasks](https://user-images.githubusercontent.com/90531123/142075504-b77ae438-4cd6-4c40-a0d0-ef6a8c1d6867.jpg)
 
-## MVP GOALS (Brandon)
+## MVP GOALS
 
 - Use MongoDB and Express to create the back-end
 - Use React to create the front-end
   - Use multiple functional components
 - Give user capability for full CRUD (products for MVP, see post-MVP... preferred CRUD demonstration)
-- Deploy to Heroku and Netlify
-- Authorization and Authentication (user sign in and sign up)
+- Deploy to Railway and Netlify
 - CSS styling to match wireframe and branding
-  - Include media queries
+  - Responsive Design
 
-## POST MVP GOALS (Brandon)
+## POST MVP GOALS
 
 - Add user capability to review products (with full CRUD capability)
 - Loading animation on home page
 - Ability to edit a user profile
 
-## Project Schedule (Brandon)
+## Project Schedule
 
-| Date   | Deliverable                                                                         |   Status   |
-| :----- | :---------------------------------------------------------------------------------- | :--------: |
-| Nov 3  | Project Team Building                                                               |  Complete  |
-| Nov 4  | Wireframes + Final Project Approval                                                 |  Complete  |
-| Nov 5  | Create Back-End (group code)                                                        |  Complete  |
-| Nov 6  | Continue Back-End (group code) + Testing + Deploy Back-End                          |  Complete  |
-| Nov 7  | Create React App + Test Components to Render / Assign Individual Tasks in Front-End | Incomplete |
-| Nov 8  | Continue Working on React Front-End                                                 | Incomplete |
-| Nov 9  | Working Prototype + Start CSS Styling                                               | Incomplete |
-| Nov 10 | CSS Styling                                                                         | Incomplete |
+| Date      | Deliverable                                                |   Status   |
+| :-------- | :--------------------------------------------------------- | :--------: |
+| Nov 3     | Project Team Building                                      |  Complete  |
+| Nov 4     | Wireframes + Final Project Approval                        |  Complete  |
+| Nov 5 - 6 | Create Back-End (group code)                               | Incomplete |
+| Nov 7     | Continue Back-End (group code) + Testing + Deploy Back-End | Incomplete |
+| Nov 8     | Working on React Front-End                                 | Incomplete |
+| Nov 9     | Working Prototype + CSS Styling                            | Incomplete |
+| Nov 10    | Present and Celebrate                                      | Incomplete |
