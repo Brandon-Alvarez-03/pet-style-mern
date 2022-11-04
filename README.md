@@ -19,7 +19,7 @@
 11. Tools, tech, and skills used
 12. Add profile view counter
 
-**Github Repo:**
+[Github Repo](https://github.com/Brandon-Alvarez-03/pet-style-mern)
 
 **Railway:**
 
@@ -27,15 +27,15 @@
 
 ## Overview (Erin)
 
-## Team Members (Sandy)
+## Team Members
 
--
--
--
--
--
+- Brandon Alvarez
+- Sandy Caba
+- Erin Baright
+- Caprice Genninger
+- Gary Bowen
 
-## Data Schema (Sandy and Gary)
+## Data Schema
 
 Products:
 
@@ -51,47 +51,16 @@ const Product = new Schema
       type: String,
       required: true
       },
-    description: {
-      type: String,
-      required: true
-      },
-    type: {
-      type: String,
-      required: false
-      },
     price: {
-      type: String,
+      type: Number,
       required: true
       },
-    featured: {
-      type: Boolean,
-      default: false
+    rating: {
+      type: Number,
+      required: false
       }
   },
-  { timestamps: true }
 )
-```
-
-Users:
-
-```JSON
- const User = new Schema  ({
-   username: {
-     type: String,
-     required: true,
-   },
-   email: {
-     type: String,
-     required: true,
-   },
-   password_digest: {
-     type: String,
-     required: true,
-     select: false
-   },
-   { timestamps: true }
- })
-
 ```
 
 ## Component Hierarchy (Caprice)
@@ -108,13 +77,13 @@ https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A
 
 ![Screen Shot 2021-11-12 at 2 30 20 PM](https://user-images.githubusercontent.com/90531123/141536904-64191867-03b6-4d4b-a387-c8ba05fbf0a3.png)
 
-## Team Expectations (Erin)
+## Team Expectations
 
-[Team Expectations](https://docs.google.com/document/d/1cJsnRTeMD8zwStb7M6jFdcLx1ro5UoGyzrmQ1iOCzB0/edit?usp=sharing)
+[Team Expectations](https://docs.google.com/document/d/1-zIWTr3SB-H0CEnunKl643faMRZ34qR3WFkCExWqjlo/edit?usp=sharing)
 
-[Project Management](https://app.asana.com/0/1201354529674099/timeline)
+## Content Management
 
-![tasks](https://user-images.githubusercontent.com/90531123/142075504-b77ae438-4cd6-4c40-a0d0-ef6a8c1d6867.jpg)
+<img src="./img/asana.png" >
 
 ## MVP GOALS (Brandon)
 
