@@ -25,9 +25,9 @@
 
 **Netlify:**
 
-## Overview (Erin)
+## Overview 
 
-## Team Members (Sandy)
+## Team Members
 
 -
 -
@@ -35,7 +35,7 @@
 -
 -
 
-## Data Schema (Sandy and Gary)
+## Data Schema
 
 Products:
 
@@ -94,18 +94,18 @@ Users:
 
 ```
 
-## Component Hierarchy (Caprice)
+## Component Hierarchy
 [Flow Chart](https://www.figma.com/file/YJa4nQJAdoLtJ89YgJ5VX4/Data-Flow?node-id=0%3A1)
 
 ![Flow Chart](./img/flowchart.png)
 
-## Wireframes & Branding (Caprice)
+## Wireframes & Branding
 [Wireframe](https://www.figma.com/file/AqD4o1McErCQNpwiEtu1LG/Untitled?node-id=0%3A1)
 ![Home and Item pages](./img/homeAndItems.png)
 ![Empty and Full Cart pages](./img/cart.png)
 
 
-## Team Expectations (Erin)
+## Team Expectations 
 
 [Team Expectations](https://docs.google.com/document/d/1cJsnRTeMD8zwStb7M6jFdcLx1ro5UoGyzrmQ1iOCzB0/edit?usp=sharing)
 
@@ -113,7 +113,7 @@ Users:
 
 ![tasks](https://user-images.githubusercontent.com/90531123/142075504-b77ae438-4cd6-4c40-a0d0-ef6a8c1d6867.jpg)
 
-## MVP GOALS (Brandon)
+## MVP GOALS 
 
 - Use MongoDB and Express to create the back-end
 - Use React to create the front-end
@@ -124,13 +124,13 @@ Users:
 - CSS styling to match wireframe and branding
   - Include media queries
 
-## POST MVP GOALS (Brandon)
+## POST MVP GOALS 
 
 - Add user capability to review products (with full CRUD capability)
 - Loading animation on home page
 - Ability to edit a user profile
 
-## Project Schedule (Brandon)
+## Project Schedule 
 
 | Date   | Deliverable                                                                         |   Status   |
 | :----- | :---------------------------------------------------------------------------------- | :--------: |
