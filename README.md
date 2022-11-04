@@ -25,8 +25,6 @@
 
 **Netlify:**
 
----
-
 ## Overview
 
 
@@ -83,6 +81,7 @@ They can pay with a mock credit card input section, and once accepted, the scree
 - Gary Bowen
 
 
+
 ## Data Schema
 
 Products:
@@ -110,18 +109,22 @@ const Product = new Schema
   },
 )
 ```
-## Component Hierarchy (Caprice)
+
+
+## Component Hierarchy
+
 [Flow Chart](https://www.figma.com/file/YJa4nQJAdoLtJ89YgJ5VX4/Data-Flow?node-id=0%3A1)
 
 ![Flow Chart](./img/flowchart.png)
 
+
 ---
 
 ## Wireframes & Branding (Caprice)
+
 [Wireframe](https://www.figma.com/file/AqD4o1McErCQNpwiEtu1LG/Untitled?node-id=0%3A1)
 ![Home and Item pages](./img/homeAndItems.png)
 ![Empty and Full Cart pages](./img/cart.png)
-
 
 
 ---
@@ -136,7 +139,7 @@ const Product = new Schema
 
 ---
 
-## MVP GOALS (Brandon)
+## MVP GOALS 
 
 - Use MongoDB and Express to create the back-end
 - Use React to create the front-end
@@ -147,17 +150,19 @@ const Product = new Schema
 - CSS styling to match wireframe and branding
   - Include media queries
 
----
 
-## POST MVP GOALS (Brandon)
+## POST MVP GOALS 
+=======
+
 
 - Add user capability to review products (with full CRUD capability)
 - Loading animation on home page
 - Ability to edit a user profile
 
----
 
-## Project Schedule
+## Project Schedule 
+
+---
 
 | Date   | Deliverable                                                                         |   Status   |
 | :----- | :---------------------------------------------------------------------------------- | :--------: |
