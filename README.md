@@ -19,21 +19,68 @@
 11. Tools, tech, and skills used
 12. Add profile view counter
 
-**Github Repo:**
+[Github Repo](https://github.com/Brandon-Alvarez-03/pet-style-mern)
 
 **Railway:**
 
 **Netlify:**
 
-## Overview (Erin)
+## Overview
 
-## Team Members (Sandy)
 
--
--
--
--
--
+### Brand Statement:
+
+Did your pet chew up their toys again? Searching for new accessories to swag out your newly adopted fur baby?
+
+Welcome to PetLyfe — your trusted online pet accessory shop committed to providing cats and dogs with a wide variety of high-quality toys and accessories.
+
+We love our pets, and we know you do too. Above all, we love spoiling them with fun, snazzy accessories so they live life to the fullest. 
+
+Our lives are defined by special moments with our fur babies. We believe that bedazzling their lives with fun and excitement creates unforgettable memories that last a lifetime. 
+
+At PetLyfe, we don’t just bring joy to the ~~children~~ animals we adore. We bring joy to humans too.
+
+### PetLyfe.com Outline:
+
+- #### HOME PAGE:
+
+When visiting PetLyfe.com, visitors will be greeted with a landing page featuring a welcome image featuring pets with our products and a call to action button: "Shop All".
+
+Below, visitors will be directed to shop for cats or dogs to better filter the product content for the user. There will also be another "Shop All" option.
+
+Below the cats and dogs filter section, visitors will be encouraged to create an account to sign up for exclusive discounts and offers.
+
+- #### NAVIGATION BAR
+
+On the top left of the header, our logo will take visitors to the home page.
+
+On the top right, visitors can click on Shop All, Login, and View shopping cart (with an image of a shopping cart).
+
+- #### FOOTER
+
+On the bottom of the screen, a footer will provide links to Shop All, Login, Shopping cart, and About.
+
+- #### SHOPPING PAGE:
+
+On the shop all page, visitors will see all products in our inventory with the option to view details and add product to their shopping cart. Visitors can also filter by cat or dog.
+
+- #### CHECKOUT PAGE:
+
+Visitors will see what items are in their carts and proceed by logging in or checking out as a guest.
+
+Visitors can add more items, edit their cart, or delete items.
+
+They can pay with a mock credit card input section, and once accepted, the screen will read: “Your fur baby thanks you for your order!” with a "Return to products" button.
+
+## Team Members
+
+- Brandon Alvarez
+- Sandy Caba
+- Erin Baright
+- Caprice Genninger
+- Gary Bowen
+
+
 
 ## Data Schema
 
@@ -51,70 +98,46 @@ const Product = new Schema
       type: String,
       required: true
       },
-    description: {
-      type: String,
-      required: true
-      },
-    type: {
-      type: String,
-      required: false
-      },
     price: {
-      type: String,
+      type: Number,
       required: true
       },
-    featured: {
-      type: Boolean,
-      default: false
+    rating: {
+      type: Number,
+      required: false
       }
   },
-  { timestamps: true }
 )
 ```
 
-Users:
 
-```JSON
- const User = new Schema  ({
-   username: {
-     type: String,
-     required: true,
-   },
-   email: {
-     type: String,
-     required: true,
-   },
-   password_digest: {
-     type: String,
-     required: true,
-     select: false
-   },
-   { timestamps: true }
- })
+## Component Hierarchy
 
-```
+[Flow Chart](https://www.figma.com/file/YJa4nQJAdoLtJ89YgJ5VX4/Data-Flow?node-id=0%3A1)
 
-## Component Hierarchy (Caprice)
+![Flow Chart](./img/flowchart.png)
 
-https://whimsical.com/everfree-P4dkTQB4sykQrTkRmoBqX9
 
-![Screen Shot 2021-11-12 at 1 50 41 PM](https://user-images.githubusercontent.com/90531123/141532906-6f8046d3-b26d-4457-921f-234126942273.png)
+---
 
 ## Wireframes & Branding (Caprice)
 
-https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A1
+[Wireframe](https://www.figma.com/file/AqD4o1McErCQNpwiEtu1LG/Untitled?node-id=0%3A1)
+![Home and Item pages](./img/homeAndItems.png)
+![Empty and Full Cart pages](./img/cart.png)
 
-![Screen Shot 2021-11-12 at 1 17 04 PM](https://user-images.githubusercontent.com/90531123/141529286-a175ae3c-1e1a-469b-8158-86de37ed976b.png)
 
-![Screen Shot 2021-11-12 at 2 30 20 PM](https://user-images.githubusercontent.com/90531123/141536904-64191867-03b6-4d4b-a387-c8ba05fbf0a3.png)
+---
 
-## Team Expectations (Erin)
+## Team Expectations
 
-[Team Expectations](https://docs.google.com/document/d/1cJsnRTeMD8zwStb7M6jFdcLx1ro5UoGyzrmQ1iOCzB0/edit?usp=sharing)
+[Team Expectations](https://docs.google.com/document/d/1-zIWTr3SB-H0CEnunKl643faMRZ34qR3WFkCExWqjlo/edit?usp=sharing)
 
-[Project Management](https://app.asana.com/0/1201354529674099/timeline)
+## Content Management
 
-![tasks](https://user-images.githubusercontent.com/90531123/142075504-b77ae438-4cd6-4c40-a0d0-ef6a8c1d6867.jpg)
+<img src="./img/asana.png" >
+
+---
 
 ## MVP GOALS
 
