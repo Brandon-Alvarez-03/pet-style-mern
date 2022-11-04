@@ -25,7 +25,56 @@
 
 **Netlify:**
 
+---
+
 ## Overview (Erin)
+
+### Brand Statement:
+
+Did your pet chew up their toys again? Searching for new accessories to swag out your newly adopted fur baby?
+
+Welcome to PetLyfe — your trusted online pet accessory shop committed to providing cats and dogs with a wide variety of high-quality toys and accessories.
+
+We love our pets, and we know you do too. Above all, we love spoiling them with fun, snazzy accessories so they live life to the fullest. 
+
+Our lives are defined by special moments with our fur babies. We believe that bedazzling their lives with fun and excitement creates unforgettable memories that last a lifetime. 
+
+At PetLyfe, we don’t just bring joy to the ~~children~~ animals we adore. We bring joy to humans too.
+
+### PetLyfe.com Outline:
+
+- #### HOME PAGE:
+
+When visiting PetLyfe.com, visitors will be greeted with a landing page featuring a welcome image featuring pets with our products and a call to action button: "Shop All".
+
+Below, visitors will be directed to shop for cats or dogs to better filter the product content for the user. There will also be another "Shop All" option.
+
+Below the cats and dogs filter section, visitors will be encouraged to create an account to sign up for exclusive discounts and offers.
+
+- #### NAVIGATION BAR
+
+On the top left of the header, our logo will take visitors to the home page.
+
+On the top right, visitors can click on Shop All, Login, and View shopping cart (with an image of a shopping cart).
+
+- #### FOOTER
+
+On the bottom of the screen, a footer will provide links to Shop All, Login, Shopping cart, and About.
+
+- #### SHOPPING PAGE:
+
+On the shop all page, visitors will see all products in our inventory with the option to view details and add product to their shopping cart. Visitors can also filter by cat or dog.
+
+- #### CHECKOUT PAGE:
+
+Visitors will see what items are in their carts and proceed by logging in or checking out as a guest.
+
+Visitors can add more items, edit their cart, or delete items.
+
+They can pay with a mock credit card input section, and once accepted, the screen will read: “Your fur baby thanks you for your order!” with a "Return to products" button.
+
+
+---
 
 ## Team Members (Sandy)
 
@@ -33,7 +82,9 @@
 -
 -
 -
--
+
+
+---
 
 ## Data Schema (Sandy and Gary)
 
@@ -94,11 +145,15 @@ Users:
 
 ```
 
+---
+
 ## Component Hierarchy (Caprice)
 
 https://whimsical.com/everfree-P4dkTQB4sykQrTkRmoBqX9
 
 ![Screen Shot 2021-11-12 at 1 50 41 PM](https://user-images.githubusercontent.com/90531123/141532906-6f8046d3-b26d-4457-921f-234126942273.png)
+
+---
 
 ## Wireframes & Branding (Caprice)
 
@@ -108,6 +163,8 @@ https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A
 
 ![Screen Shot 2021-11-12 at 2 30 20 PM](https://user-images.githubusercontent.com/90531123/141536904-64191867-03b6-4d4b-a387-c8ba05fbf0a3.png)
 
+---
+
 ## Team Expectations (Erin)
 
 [Team Expectations](https://docs.google.com/document/d/1cJsnRTeMD8zwStb7M6jFdcLx1ro5UoGyzrmQ1iOCzB0/edit?usp=sharing)
@@ -115,6 +172,8 @@ https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A
 [Project Management](https://app.asana.com/0/1201354529674099/timeline)
 
 ![tasks](https://user-images.githubusercontent.com/90531123/142075504-b77ae438-4cd6-4c40-a0d0-ef6a8c1d6867.jpg)
+
+---
 
 ## MVP GOALS (Brandon)
 
@@ -127,11 +186,15 @@ https://www.figma.com/file/cMLvn51ilzBYvskQ4NLJSR/EverFree-Outdoors?node-id=0%3A
 - CSS styling to match wireframe and branding
   - Include media queries
 
+---
+
 ## POST MVP GOALS (Brandon)
 
 - Add user capability to review products (with full CRUD capability)
 - Loading animation on home page
 - Ability to edit a user profile
+
+---
 
 ## Project Schedule (Brandon)
 
