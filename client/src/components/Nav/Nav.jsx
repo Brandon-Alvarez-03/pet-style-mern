@@ -6,7 +6,7 @@ function Nav() {
     <div className='nav'>
       <h2>Placeholder</h2>
       <h2>Blah</h2>
-      <h2>Test</h2>
+      <h2>Login</h2>
     </div>
   )
 }
