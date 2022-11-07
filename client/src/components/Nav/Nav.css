@@ -23,3 +23,21 @@ font-weight: 500;
   transform: scale(1.2);
   opacity: 1;
 }
+
+.nav-logo {
+  cursor: pointer;
+  transition: transform 50ms ease-in-out;
+}
+
+.nav-logo:hover {
+  transform: scale(1.2);
+}
+
+/* Hides scrollbar for Chrome,Safari, and Opera */
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-icon {
+  cursor: pointer; 
+}
