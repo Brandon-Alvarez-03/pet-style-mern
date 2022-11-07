@@ -1,0 +1,31 @@
+.footer-logo {
+  height: 55px;
+  width: 110px;
+}
+
+.footer {
+   background-color: #FFDE50; 
+  display: flex;
+  grid-area: ft;
+  background-color: lightpink;
+  color: #121212;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 40px;
+}
+
+.footer > h2 {
+  justify-content: center;
+}
+
+.footer-paws {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.footer-about {
+  opacity: 1;
+  font-weight: 300;
+  cursor: pointer;
+}
