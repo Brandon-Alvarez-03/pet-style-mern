@@ -7,7 +7,7 @@ function Nav() {
   return (
     <div className='nav'>
       <img className='nav-logo' alt='PetLyfe-logo' src={logo} />
-      < ShoppingCartIcon />
+      < ShoppingCartIcon className='shopping-cart'/>
       
     </div>
   )
