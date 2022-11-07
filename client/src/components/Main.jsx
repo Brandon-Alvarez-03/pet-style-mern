@@ -1,6 +1,6 @@
 import React from "react";
-import {Routes, Route} from "react-router-dom";
-import Home from "../screens/Home.jsx";
+// import {Routes, Route} from "react-router-dom";
+// import Home from "../screens/Home.jsx";
 import Products from "../screens/Products.jsx";
 
 function Main() {
