@@ -1,14 +1,13 @@
 import React from "react";
 // import {Routes, Route} from "react-router-dom";
-// import Home from "../screens/Home.jsx";
+import Home from "../screens/Home/Home.jsx";
 import Products from "../screens/Products.jsx";
 
 function Main() {
   return (
     <div className="main">
-      Screens go in here!!!
-      {/* <Home /> */}
-      <Products />
+      <Home />
+      {/* <Products /> */}
     </div>
   );
 }
