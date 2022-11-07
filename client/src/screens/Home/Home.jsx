@@ -1,8 +1,8 @@
 import React from 'react';
-import mainPic from '../../images/catsAndDogs/cat-dog-3.jpg';
-import catPic from '../../images/cats/cat-1.jpg';
-import dogPic from '../../images/dogs/dog-6.jpg';
-import allPic from '../../images/catsAndDogs/cat-dog-2.jpg';
+import mainPic from '../../images/catsAndDogs/hero-cat-dog.png';
+import catPic from '../../images/cats/square-cat-1.png';
+import dogPic from '../../images/dogs/square-dog-2.png';
+import allPic from '../../images/catsAndDogs/square-cat-dog-1.png';
 import './Home.css';
 
 function Home() {
@@ -23,7 +23,10 @@ function Home() {
           <button className='shopCats'>Shop Cats</button>
         </div>
         <div className='chooseDog'>
-          <img className='chooseDogImg' alt='cats' src={dogPic}/>
+          <img className='chooseDogImg'
+            alt='cats'
+            src={dogPic}
+          />
           <button className='shopDogs'>Shop Dogs</button>
         </div>
         <div className='chooseAll'>

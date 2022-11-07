@@ -1,5 +1,6 @@
 .homeScreen {
-  /* background-color: #0392D9; */
+  background-color: white;
+  margin: 0 auto;
 }
 
 .homeImage {
@@ -16,6 +17,7 @@
   top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 2.5em;
 }
 
 .CTAButton {
@@ -29,6 +31,7 @@
   font-weight: bold;
   text-transform: uppercase;
   padding: 10px;
+  font-size: 1.4em;
 }
 
 .CTAButton:hover {
@@ -51,15 +54,19 @@
   /* position: relative;
   text-align: center; */
   margin: 20px;
-  display: block;
+  /* display: block; */
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .chooseCatImg, .chooseDogImg, .chooseAllImg {
   border-radius: 50%;
-  height: 100%;
-  width: 50%;
+  /* height: 100%;
+  width: 50%; */
+  height: 200px;
+  width: 200px;
 }
 
 .shopCats, .shopDogs, .shopAll {
@@ -85,9 +92,10 @@
  
   .CTA {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.2em;
   }
   
   .CTAButton {
@@ -101,6 +109,7 @@
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
+    font-size: .9em;
   }
 
   .landImage {
@@ -108,15 +117,17 @@
   }
 
   .chooseCatImg, .chooseDogImg, .chooseAllImg {
-    width: 100%;
     border-radius: 50%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
   }
 
   .chooseCat, .chooseDog, .chooseAll {
     position: relative;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
   }
 
   .shopCats, .shopDogs, .shopAll {
@@ -125,7 +136,8 @@
     border: white;
     font-weight: bold;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 1.3em;
   }
   
 }
