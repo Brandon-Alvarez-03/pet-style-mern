@@ -1,6 +1,6 @@
 .nav {
   grid-area: nav; 
-  background-color: lightblue;
+  background-color: #FFDE50;
   color: #121212;
   display: flex;
   color: white;
@@ -15,8 +15,11 @@ margin-right: 30px;
 justify-content: center;
 cursor: pointer;
 transition: transition 50ms ease-in-out;
+opacity: 0.7;
+font-weight: 500;
 }
 
 .nav > h2:hover {
   transform: scale(1.2);
+  opacity: 1;
 }
