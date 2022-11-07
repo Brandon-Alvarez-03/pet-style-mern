@@ -1,15 +1,17 @@
 import React from 'react'
 import "./Nav.css"
 import logo from "../../images/logos/PetLyfe-logo.png"
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 
 function Nav() {
   return (
     <div className='nav'>
-      <h2>Placeholder</h2>
-      <img className='nav-logo' alt='PetLyfe-logo' src={ logo } />
-      <h2>Login</h2>
+      <img className='nav-logo' alt='PetLyfe-logo' src={logo} />
+      < ShoppingCartIcon />
+      
     </div>
   )
 }
+
 
 export default Nav
