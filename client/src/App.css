@@ -1,3 +1,60 @@
 .App {
   text-align: center;
+  /* background-color: #121212; */
+  height: 100vh;
+  color: #121212;
+
+  font-family: var(
+    --font-family,
+    CircularSp,
+    CircularSp-Arab,
+    CircularSp-Hebr,
+    CircularSp-Cyrl,
+    CircularSp-Grek,
+    CircularSp-Deva,
+    var(--fallback-fonts, sans-serif)
+  );
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 75px 1fr 75px;
+  grid-template-areas:
+    "nav"
+    "main"
+    "ft";
+}
+
+.App * {
+  border: 1px solid rgba(1, 1, 1, 0.4);
+}
+
+.nav {
+  grid-area: nav;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  color: #121212;
+}
+
+.main {
+  grid-area: main;
+  flex: 1;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgoldenrodyellow;
+  color: #121212;
+}
+
+.footer {
+  grid-area: ft;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightpink;
+  color: #121212;
 }
