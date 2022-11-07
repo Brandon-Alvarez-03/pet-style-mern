@@ -1,6 +1,8 @@
 .footer-logo {
   height: 55px;
   width: 110px;
+  transition: transform 50ms ease-in-out;
+  cursor: pointer;
 }
 
 .footer {
@@ -22,10 +24,26 @@
   height: 60px;
   width: 60px;
   cursor: pointer;
+  transition: transform 50ms ease-in-out;
 }
 
 .footer-about {
   opacity: 1;
   font-weight: 300;
   cursor: pointer;
+  transition: transform 50ms ease-in-out;
+  font-family: CircularSp-Cyrl;
 }
+
+.footer-logo:hover {
+transform: scale(1.2);
+}
+
+.footer-about:hover {
+  transform: scale(1.2);
+}
+
+.footer-paws:hover {
+  transform: scale(1.2);
+}
+
