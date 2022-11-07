@@ -67,12 +67,4 @@
   margin: auto;
 }
 
-.footer {
-  grid-area: ft;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: lightpink;
-  color: #121212;
-}
+
