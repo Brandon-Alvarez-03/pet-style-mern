@@ -39,6 +39,17 @@ font-weight: 500;
   display: none;
 }
 
-.nav-icon {
+.shopping-cart {
   cursor: pointer; 
+  transition: transform 50ms ease-in-out;
+}
+
+.shopping-cart:hover {
+  transform: scale(1.2);
+}
+
+.nav > .MuiSvgIcon-root {
+  height:40px;
+  width: 40px;
+
 }
