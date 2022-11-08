@@ -1,0 +1,21 @@
+.bg {
+  height: 100%;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+}
+
+.items {
+  border: 2px solid red;
+  width: 60%;
+}
+
+.subTotal {
+  border: 2px solid red;
+  width: 30%;
+  padding: 10px;
+}
