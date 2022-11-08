@@ -46,7 +46,7 @@
 }
 
 .price {
-  color: #00BD5E;
+  color: red;
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -118,7 +118,7 @@
 }
 
 .price {
-  color: #00BD5E;
+  color: red;
   font-weight: bold;
   font-size: 1.4em;
 }

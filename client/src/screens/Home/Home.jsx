@@ -3,8 +3,10 @@ import mainPic from '../../images/catsAndDogs/hero-cat-dog.png';
 import catPic from '../../images/cats/square-cat-1.png';
 import dogPic from '../../images/dogs/square-dog-2.png';
 import allPic from '../../images/catsAndDogs/square-cat-dog-1.png';
-import Collar from '../../images/categories/collar.jpg';
-import Leash from '../../images/categories/leash.jpg';
+import catToys from '../../images/categories/cat-toys.jpg';
+import catClothes from '../../images/categories/cat-clothes.jpg';
+import dogToys from '../../images/categories/dog-toys.jpg';
+import dogClothes from '../../images/categories/dog-clothes.jpg';
 import './Home.css';
 
 function Home() {
@@ -18,7 +20,7 @@ function Home() {
       </div>
 
       <div className='description'>
-        <h3>Your pet slid into our DMs. 📲 They said buy whatever you want.</h3>
+        <h3>Your pet slid into our DMs. They said buy whatever you want.</h3>
       </div>
       
       <h2>Choose Your Pet</h2>
@@ -39,15 +41,23 @@ function Home() {
         </div>
       </div>
 
-      <h2>Popular Categories</h2>
+      <h2 className='popular-categories'>Popular Categories</h2>
       <div className='categoriesContainer'>
-        <div className='collars'>
-          <img className='collarPic' alt='puppy collar' src={Collar} />
-          <h3>Collars</h3>
+        <div className='cat-toys'>
+          <img className='cat-toy-pic' alt='cat toy' src={catToys} />
+          <h3>Cat Toys</h3>
         </div>
-        <div className='leashes'>
-          <img className='leashPic' alt='dog leash' src={Leash} />
-          <h3>Leashes</h3>
+        <div className='cat-clothes'>
+          <img className='cat-clothes-pic' alt='cat clothes' src={catClothes} />
+          <h3>Cat Clothes</h3>
+        </div>
+        <div className='dog-toys'>
+          <img className='dog-toy-pic' alt='dog toy' src={dogToys} />
+          <h3>Dog Toys</h3>
+        </div>
+        <div className='dog-clothes'>
+          <img className='dog-clothes-pic' alt='dog clothes' src={dogClothes} />
+          <h3>Dog Clothes</h3>
         </div>
       </div>
 
