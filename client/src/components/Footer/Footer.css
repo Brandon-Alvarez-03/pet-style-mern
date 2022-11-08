@@ -1,0 +1,50 @@
+.footer-logo {
+  height: 55px;
+  width: 110px;
+  transition: transform 50ms ease-in-out;
+  cursor: pointer;
+}
+
+.footer {
+   background-color: #FFDE50; 
+  display: flex;
+  grid-area: ft;
+  background-color: lightpink;
+  color: #121212;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 40px;
+  height: 150px;
+}
+
+.footer > h2 {
+  justify-content: center;
+}
+
+.footer-paws {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  transition: transform 50ms ease-in-out;
+}
+
+.footer-about-copy {
+  opacity: 1;
+  font-weight: 300;
+  cursor: pointer;
+  transition: transform 50ms ease-in-out;
+  font-family: CircularSp-Cyrl;
+}
+
+.footer-logo:hover {
+transform: scale(1.2);
+}
+
+.footer-about-copy:hover {
+  transform: scale(1.2);
+}
+
+.footer-paws:hover {
+  transform: scale(1.2);
+}
+
