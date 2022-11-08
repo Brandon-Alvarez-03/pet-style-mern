@@ -13,7 +13,7 @@ function Products() {
     let cartList = [];
 
     const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
-    console.log(getCurrentCart);
+    console.log(getCurrentCart)
 
     if (getCurrentCart.length) {
       cartList = getCurrentCart;
@@ -31,6 +31,7 @@ function Products() {
       .then((response) => setProductData(response.data));
     // .then((response) => setProductFilteredData(response.data))
   }, []);
+  console.log(productData);
   console.log(productData);
 
   return (

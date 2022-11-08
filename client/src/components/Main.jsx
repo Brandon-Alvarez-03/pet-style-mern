@@ -8,7 +8,6 @@ import Cart from "../screens/Cart.jsx";
 import Home from "../screens/Home/Home.jsx";
 import Login from "../screens/Login.jsx";
 
-
 function Main() {
   return (
     <div className="main">
