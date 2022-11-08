@@ -1,9 +1,7 @@
-import React from 'react'
+import React from "react";
 
 function Home() {
-  return (
-    <div>Welcome to your Home Screen</div>
-  )
+  return <div className="home">Welcome to your Home Screen</div>;
 }
 
-export default Home
+export default Home;

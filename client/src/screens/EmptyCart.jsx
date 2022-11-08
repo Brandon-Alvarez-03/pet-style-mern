@@ -1,5 +1,7 @@
 import React from 'react'
 import sadCat1 from "../images/sad/sad-cat-1.jpg"
+import sadCat2 from "../images/sad/sad-cat-2.jpg"
+import sadCat3 from "../images/sad/sad-cat-3.jpg"
 
 function EmptyCart() {
   return (
@@ -11,4 +13,4 @@ function EmptyCart() {
   )
 }
 
-export default EmptyCart
+export default EmptyCart;
