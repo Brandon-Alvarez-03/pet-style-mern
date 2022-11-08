@@ -30,9 +30,7 @@ function Home() {
       <h2>Choose Your Pet</h2>
       <div className="choosePet">
         <div className="chooseCat">
-          <Link to="/products/cat">
-            <img className="chooseCatImg" alt="sleeping cat" src={catPic} />
-          </Link>
+          <img className="chooseCatImg" alt="sleeping cat" src={catPic} />
           <Link to="/products/cat">
             <button className="shopCats">Shop Cats</button>
           </Link>
