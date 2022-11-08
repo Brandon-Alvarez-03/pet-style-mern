@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
-import "./SignIn.css"
+import "./SignUp.css"
 
-function SignIn() {
+function SignUp() {
 
 
 const [popupStyle, showPopup] = useState("hide")
 
 const popup = () => {
-    showPopup("login-popup")
+    showPopup("signup-popup")
     setTimeout(() => showPopup("hide"), 3000)
 }
 
@@ -25,21 +25,22 @@ const onFailure = e => {
   return (
     <div className='page'>
     <div className="cover">
-        <h1>Login</h1>
-        <input type="text" placeholder="username" />
-        <input type="password" placeholder="password" />
+        <h1>Sign Up!</h1>
+        <input type="text" placeholder="Set Username" />
+        <input type="password" placeholder="New Password" />
+        <input type="password" placeholder="Confirm Password" />
 
-        <div className="login-btn" onClick={popup}>Login</div>
+        <div className="signup-btn" onClick={popup}>Confirm</div>
 
 
-        <div className="alt-login">
+        <div className="alt-signup">
        
            
         </div>
 
         <div className={popupStyle}>
-            <h3>Login Failed</h3>
-            <p>Username or password incorrect</p>
+          <h3>Welcome, Member Name!</h3>
+            <p>You will remain logged in the next time you visit!</p>
         </div>
         
       </div>
@@ -47,4 +48,4 @@ const onFailure = e => {
 )
 }
 
-export default SignIn
+export default SignUp

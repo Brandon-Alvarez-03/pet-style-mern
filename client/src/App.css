@@ -99,3 +99,6 @@ transition: transform 50ms ease-in-out
   background-color: white;
 }
 
+.product-image:hover {
+  cursor: pointer;
+}

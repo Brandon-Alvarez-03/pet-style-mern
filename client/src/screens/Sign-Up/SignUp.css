@@ -32,14 +32,19 @@
   justify-content: space-around;
 }
 
-.alt-login {
+.signUp-pic {
+  height: 300px;
+  width: 300px;
+}
+
+.alt-signup {
   width: 80%;
   height: 3em;
   display: flex;
   justify-content: space-around;
 }
 
-.alt-login div {
+.alt-signup div {
   width: 47.5%;
   height: 90%;
   border-radius: 0.25em;
@@ -64,7 +69,7 @@ input:focus {
   outline-color: rgb(32, 177, 255);
 }
 
-.login-btn {
+.signup-btn {
   width: 40%;
   height: 3em;
   background-color: rgb(32, 177, 255);
@@ -76,7 +81,7 @@ input:focus {
   cursor: pointer;
 }
 
-.login-btn:hover { transform: scale(1.25);}
+.signup-btn:hover { transform: scale(1.25);}
 
 .text {
   position: relative;
@@ -88,7 +93,7 @@ input:focus {
   transform: scale(0);
 }
 
-.login-popup {
+.signup-popup {
   position: absolute;
   height: 30em;
   width: 30em;

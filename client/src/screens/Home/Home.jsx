@@ -6,6 +6,7 @@ import allPic from '../../images/catsAndDogs/square-cat-dog-1.png';
 import Collar from '../../images/categories/collar.jpg';
 import Leash from '../../images/categories/leash.jpg';
 import './Home.css';
+import { Link } from "react-router-dom"
 
 function Home() {
   return (
@@ -14,7 +15,9 @@ function Home() {
       <div className='homeImage'>
         <img className='landingImage' alt='cats and dogs with pink background' src={mainPic}/>
         <h2 className='CTA'>Spoil your fur baby.</h2>
-        <button className='CTAButton'>Shop Now</button>
+        <Link to="/products">
+          <button className='CTAButton'>Shop Now</button>
+        </Link>
       </div>
 
       <div className='description'>
