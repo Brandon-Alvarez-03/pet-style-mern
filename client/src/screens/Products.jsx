@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import Search from "../components/Search/Search.jsx"
 
 function Products() {
   const [productData, setProductData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [query, setQuery] = useState("");
 
   const sendGetRequest = async () => {
     try {
-      const resp = await axios("https://pet-lyfe-api.up.railway.app/");
+      const resp = await axios(`https://pet-lyfe-api.up.railway.app?name=${query}`);
       setProductData(resp.data);
     } catch (err) {
       // Handle Error Here

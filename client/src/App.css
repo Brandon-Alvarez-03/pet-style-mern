@@ -31,7 +31,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   color: #121212;
 }
 
@@ -73,6 +73,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightpink;
+  background-color: black;
   color: #121212;
 }
+
