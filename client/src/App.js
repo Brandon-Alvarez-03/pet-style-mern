@@ -5,6 +5,7 @@ import Main from "./components/Main.jsx";
 // import Products from "./screens/Products.jsx";
 import Footer from "./components/Footer.jsx";
 import "./App.css";
+// import Products from "./screens/Products.jsx";
 
 function App() {
   return (
