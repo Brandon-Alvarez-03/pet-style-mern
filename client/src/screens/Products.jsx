@@ -29,10 +29,8 @@ function Products() {
     axios
       .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
       .then((response) => setProductData(response.data));
-    // .then((response) => setProductFilteredData(response.data))
   }, []);
-  console.log(productData);
-  console.log(productData);
+
 
   return (
     <div className="product-cards">
