@@ -1,9 +1,28 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import axios from "axios";
 
 function Products() {
   const [productData, setProductData] = useState([]);
   const [loading, setLoading] = useState(true);
+
+  // const addToCart = useRef();
+
+  const addToCart = (product) => {
+    console.log(product);
+    let cartList = [];
+
+    const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    console.log(getCurrentCart)
+
+    if (getCurrentCart.length) {
+      cartList = getCurrentCart;
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    } else {
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    }
+  };
 
   const sendGetRequest = async () => {
     try {
@@ -34,6 +53,12 @@ function Products() {
               <p>{product.product_name}</p>
               <p>Price: {product.retail_price}</p>
               <p>Rating: {product.rating}</p>
+              <button
+                className="add-to-cart-button"
+                onClick={() => addToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           );
         })}
