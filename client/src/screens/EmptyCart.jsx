@@ -6,7 +6,7 @@ function EmptyCart() {
   return (
     <div className="empty-cart">
       <h2>Oops! Your cart's empty D:</h2>
-      <Link to="/products">
+      <Link to="/products/all">
         <h4 className="back-shop">👉🏼Back to Shopping👈🏼</h4>
       </Link>
       <img className="sadPets" alt="sad-pet" src={sadCat1} />

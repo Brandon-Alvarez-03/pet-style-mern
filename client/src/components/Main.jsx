@@ -7,12 +7,13 @@ import Checkout from "../screens/Checkout.jsx";
 import Home from "../screens/Home/Home.jsx";
 import Login from "../screens/Login.jsx";
 
+    
 function Main() {
   return (
     <div className="main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products/:all" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/emptycart" element={<EmptyCart />} />
         <Route path="/checkout" element={<Checkout />} />
