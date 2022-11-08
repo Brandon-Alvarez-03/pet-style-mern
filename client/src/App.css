@@ -33,6 +33,7 @@
   justify-content: center;
   background-color: lightgoldenrodyellow;
   color: #121212;
+  margin-bottom: 15px;
 }
 
 .product-cards {
@@ -67,4 +68,16 @@
   margin: auto;
 }
 
+.back-shop {
+cursor: pointer;
+transition: transform 50ms ease-in-out
+}
+
+.back-shop:hover {
+  transform: scale(1.2);
+}
+
+.empty-cart {
+  background-color: white;
+}
 
