@@ -55,5 +55,10 @@ font-weight: 500;
   width: 40px;
 }
 
-
+@media screen and (max-width: 768px) {
+  .cart-container {
+    margin-right: 50px;
+  }
+  
+}
 

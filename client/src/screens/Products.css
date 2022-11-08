@@ -3,7 +3,7 @@
 }
 
 .all-products {
-  margin: 20px;
+  margin-inline: 0;
   font-size: 1.4em;
 }
 
@@ -25,10 +25,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   background-color: white;
   color: #121212;
   font-size: smaller;
+  height: 541px;
   width: 240px;
   /* margin: 20px 0 20px 0; */
   padding: 20px;
@@ -42,6 +43,7 @@
 }
 
 .product-name {
+  min-height: 36px;
   
 }
 
@@ -114,7 +116,7 @@
 }
 
 .product-name {
-  
+  height: 36px;
 }
 
 .price {
