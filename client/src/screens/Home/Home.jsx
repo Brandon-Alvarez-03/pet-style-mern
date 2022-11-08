@@ -56,9 +56,8 @@ function Home() {
         <p className='help-2'>☎️ 1-800-PET-LYFE</p>
         <p className='help-3'>📧 help@petlyfe.com</p>
       </div>
-
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;

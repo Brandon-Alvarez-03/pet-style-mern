@@ -4,6 +4,8 @@
 
 [Link to Back-End Repo](https://github.com/Brandon-Alvarez-03/pet-lyfe-backend)
 
+[Link to PetLyfe-API](https://pet-lyfe.up.railway.app/)
+
 ## Placeholders
 
 ---
@@ -157,8 +159,8 @@ const Product = new Schema
 | :-------- | :--------------------------------------------------------- | :--------: |
 | Nov 3     | Project Team Building                                      |  Complete  |
 | Nov 4     | Wireframes + Final Project Approval                        |  Complete  |
-| Nov 5 - 6 | Create Back-End  + Deploy Back-End                              | Complete |
-| Nov 7     | Continue Back-End + Testing + Develop Front-End Components| Incomplete |
-| Nov 8     | React Front-End MVP + CSS Styling                              | Incomplete |
-| Nov 9     | Refine CSS and proceed with Post-MVP Improvements                           | Incomplete |
+| Nov 5 - 6 | Create Back-End + Deploy Back-End                          |  Complete  |
+| Nov 7     | Continue Back-End + Testing + Develop Front-End Components | Incomplete |
+| Nov 8     | React Front-End MVP + CSS Styling                          | Incomplete |
+| Nov 9     | Refine CSS and proceed with Post-MVP Improvements          | Incomplete |
 | Nov 10    | Present and Celebrate                                      | Incomplete |

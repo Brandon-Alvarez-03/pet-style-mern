@@ -24,21 +24,24 @@
     "ft";
 }
 
-.App * {
-  /* border: 1px solid rgba(1, 1, 1, 0.4); */
-}
 
-.nav {
-  grid-area: nav;
-  display: flex;
+/* .App * {
+  border: 1px solid rgba(1, 1, 1, 0.4);
+} */
+
+.main {
+  grid-area: main;
+  /* flex: 1; */
+  height: auto;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
+  background-color: lightgoldenrodyellow;
   color: #121212;
+  margin-bottom: 15px;
 }
 
-.main {
+.home {
   grid-area: main;
   /* flex: 1; */
   height: auto;
@@ -50,6 +53,7 @@
 }
 
 .product-cards {
+  grid-area: main;
   background-color: lightgray;
   width: 100vw;
   height: 100%;
@@ -81,12 +85,16 @@
   margin: auto;
 }
 
-.footer {
-  grid-area: ft;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: lightpink;
-  color: #121212;
+.back-shop {
+cursor: pointer;
+transition: transform 50ms ease-in-out
 }
+
+.back-shop:hover {
+  transform: scale(1.2);
+}
+
+.empty-cart {
+  background-color: white;
+}
+
