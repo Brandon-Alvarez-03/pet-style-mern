@@ -6,6 +6,7 @@
 .homeImage {
   position: relative;
   text-align: center;
+  border-top: white 4px solid;
 }
 
 .landingImage {
@@ -14,10 +15,11 @@
 
 .CTA {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2.5em;
+  color: white;
 }
 
 .CTAButton {
@@ -30,8 +32,9 @@
   border: white;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 15px;
   font-size: 1.4em;
+  border-radius: 8px;
 }
 
 .CTAButton:hover {
@@ -40,7 +43,7 @@
   cursor: pointer;
 }
 
-.choosePet {
+.choosePet, .categoriesContainer, .help {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -50,7 +53,21 @@
   align-content: center;
 }
 
-.chooseCat, .chooseDog, .chooseAll {
+.help {
+  background-color: #0392D9;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+}
+
+.description {
+  background-color: #0392D9;
+  color: white;
+  padding: 50px;
+}
+
+.chooseCat, .chooseDog, .chooseAll, .collars, .leashes, .help-1, .help-2, .help-3 {
   /* position: relative;
   text-align: center; */
   margin: 20px;
@@ -61,12 +78,17 @@
   flex-direction: column;
 }
 
-.chooseCatImg, .chooseDogImg, .chooseAllImg {
+.chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic, .leashPic {
   border-radius: 50%;
   /* height: 100%;
   width: 50%; */
   height: 200px;
   width: 200px;
+  border: black solid 1px;
+}
+
+.chooseCatImg:hover, .chooseDogImg:hover, .chooseAllImg:hover, .collarPic:hover, .leashPic:hover {
+  cursor: pointer;
 }
 
 .shopCats, .shopDogs, .shopAll {
@@ -76,6 +98,7 @@
   font-weight: bold;
   padding: 10px;
   margin-top: 10px;
+  border-radius: 8px;
 }
 
 .shopCats:hover, .shopDogs:hover, .shopAll:hover {
@@ -112,17 +135,22 @@
     font-size: .9em;
   }
 
-  .landImage {
+  .landingImage {
     width: 100%;
   }
 
-  .chooseCatImg, .chooseDogImg, .chooseAllImg {
+  .description {
+    padding: 30px;
+    font-size: .9em;
+  }
+
+  .chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic {
     border-radius: 50%;
     width: 200px;
     height: 200px;
   }
 
-  .chooseCat, .chooseDog, .chooseAll {
+  .chooseCat, .chooseDog, .chooseAll, .collars, .leashes {
     position: relative;
     text-align: center;
     margin: 10px;
