@@ -1,0 +1,131 @@
+.homeScreen {
+  /* background-color: #0392D9; */
+}
+
+.homeImage {
+  position: relative;
+  text-align: center;
+}
+
+.landingImage {
+  width: 100%;
+}
+
+.CTA {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CTAButton {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  border: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+}
+
+.CTAButton:hover {
+  background-color: #00BD5E;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.choosePet {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.chooseCat, .chooseDog, .chooseAll {
+  /* position: relative;
+  text-align: center; */
+  margin: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.chooseCatImg, .chooseDogImg, .chooseAllImg {
+  border-radius: 50%;
+  height: 100%;
+  width: 50%;
+}
+
+.shopCats, .shopDogs, .shopAll {
+  background-color: #0392D9;
+  color: white;
+  border: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.shopCats:hover, .shopDogs:hover, .shopAll:hover {
+  background-color: #00BD5E;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .homeImage {
+    position: relative;
+    text-align: center;
+  }
+ 
+  .CTA {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .CTAButton {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    border: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  .landImage {
+    width: 100%;
+  }
+
+  .chooseCatImg, .chooseDogImg, .chooseAllImg {
+    width: 100%;
+    border-radius: 50%;
+    height: 100%;
+  }
+
+  .chooseCat, .chooseDog, .chooseAll {
+    position: relative;
+    text-align: center;
+    margin: 20px;
+  }
+
+  .shopCats, .shopDogs, .shopAll {
+    background-color: #0392D9;
+    color: white;
+    border: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+}
