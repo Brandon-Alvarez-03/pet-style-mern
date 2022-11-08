@@ -1,5 +1,5 @@
 import React from 'react'
-import Css from "./Screen css/Thankyou.css"
+// import Css from "./Screen css/Thankyou.css"
 import logo from "../images/logos/PetLyfe-brandmark-removebg.png"
 function Thanks() {
   return (
