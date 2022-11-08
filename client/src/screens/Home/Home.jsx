@@ -29,20 +29,20 @@ function Home() {
       <h2>Choose Your Pet</h2>
       <div className='choosePet'>
         <div className='chooseCat'>
-          <Link to="/products/cats">
+          <Link to="/products/cat">
             <img className='chooseCatImg' alt='sleeping cat' src={catPic} />
           </Link>    
-          <Link to="/products/cats">
+          <Link to="/products/cat">
             <button className='shopCats'>Shop Cats</button>
           </Link>
         </div>
         <div className='chooseDog'>
-          <Link to="/products/dogs">
+          <Link to="/products/dog">
           <img className='chooseDogImg'
             alt='dog wearing sunglasses' src={dogPic}
             />
             </Link> 
-            <Link to="/products/dogs">
+            <Link to="/products/dog">
           <button className='shopDogs'>Shop Dogs</button>
           </Link> 
         </div>
@@ -59,25 +59,25 @@ function Home() {
       <h2 className='popular-categories'>Popular Categories</h2>
       <div className='categoriesContainer'>
         <div className='cat-toys'>
-        <Link to="/products/cats/toys">
+        <Link to="/products/cat/toys">
             <img className='cat-toy-pic' alt='cat toy' src={catToys} />
             </Link>
           <h3>Cat Toys</h3>
         </div>
         <div className='cat-clothes'>
-        <Link to="/products/cats/clothes">
+        <Link to="/products/cat/clothes">
             <img className='cat-clothes-pic' alt='cat clothes' src={catClothes} />
             </Link>
           <h3>Cat Clothes</h3>
         </div>
         <div className='dog-toys'>
-        <Link to="/products/dogs/toys">
+        <Link to="/products/dog/toys">
             <img className='dog-toy-pic' alt='dog toy' src={dogToys} />
             </Link>
           <h3>Dog Toys</h3>
         </div>
         <div className='dog-clothes'>
-        <Link to="/products/dogs/clothes">
+        <Link to="/products/dog/clothes">
             <img className='dog-clothes-pic' alt='dog clothes' src={dogClothes} />
             </Link>
           <h3>Dog Clothes</h3>
