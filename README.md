@@ -1,6 +1,10 @@
 # Pet Style App
 
+[pet-lyfe.app](https://pet-lyfe.netlify.app/)
+
 [Link to Back-End Repo](https://github.com/Brandon-Alvarez-03/pet-lyfe-backend)
+
+[Link to PetLyfe-API](https://pet-lyfe.up.railway.app/)
 
 ## Placeholders
 
@@ -27,22 +31,21 @@
 
 ## Overview
 
-
-### Brand Statement:
+### Brand Statement
 
 Did your pet chew up their toys again? Searching for new accessories to swag out your newly adopted fur baby?
 
 Welcome to PetLyfe — your trusted online pet accessory shop committed to providing cats and dogs with a wide variety of high-quality toys and accessories.
 
-We love our pets, and we know you do too. Above all, we love spoiling them with fun, snazzy accessories so they live life to the fullest. 
+We love our pets, and we know you do too. Above all, we love spoiling them with fun, snazzy accessories so they live life to the fullest.
 
-Our lives are defined by special moments with our fur babies. We believe that bedazzling their lives with fun and excitement creates unforgettable memories that last a lifetime. 
+Our lives are defined by special moments with our fur babies. We believe that bedazzling their lives with fun and excitement creates unforgettable memories that last a lifetime.
 
 At PetLyfe, we don’t just bring joy to the ~~children~~ animals we adore. We bring joy to humans too.
 
-### PetLyfe.com Outline:
+### PetLyfe.com Outline
 
-- #### HOME PAGE:
+- #### HOME PAGE
 
 When visiting PetLyfe.com, visitors will be greeted with a landing page featuring a welcome image featuring pets with our products and a call to action button: "Shop All".
 
@@ -60,11 +63,11 @@ On the top right, visitors can click on Shop All, Login, and View shopping cart 
 
 On the bottom of the screen, a footer will provide links to Shop All, Login, Shopping cart, and About.
 
-- #### SHOPPING PAGE:
+- #### SHOPPING PAGE
 
 On the shop all page, visitors will see all products in our inventory with the option to view details and add product to their shopping cart. Visitors can also filter by cat or dog.
 
-- #### CHECKOUT PAGE:
+- #### CHECKOUT PAGE
 
 Visitors will see what items are in their carts and proceed by logging in or checking out as a guest.
 
@@ -79,8 +82,6 @@ They can pay with a mock credit card input section, and once accepted, the scree
 - Erin Baright
 - Caprice Genninger
 - Gary Bowen
-
-
 
 ## Data Schema
 
@@ -110,13 +111,11 @@ const Product = new Schema
 )
 ```
 
-
 ## Component Hierarchy
 
 [Flow Chart](https://www.figma.com/file/YJa4nQJAdoLtJ89YgJ5VX4/Data-Flow?node-id=0%3A1)
 
 ![Flow Chart](./img/flowchart.png)
-
 
 ---
 
@@ -125,7 +124,6 @@ const Product = new Schema
 [Wireframe](https://www.figma.com/file/AqD4o1McErCQNpwiEtu1LG/Untitled?node-id=0%3A1)
 ![Home and Item pages](./img/homeAndItems.png)
 ![Empty and Full Cart pages](./img/cart.png)
-
 
 ---
 
@@ -161,8 +159,8 @@ const Product = new Schema
 | :-------- | :--------------------------------------------------------- | :--------: |
 | Nov 3     | Project Team Building                                      |  Complete  |
 | Nov 4     | Wireframes + Final Project Approval                        |  Complete  |
-| Nov 5 - 6 | Create Back-End (group code)                               | Incomplete |
-| Nov 7     | Continue Back-End (group code) + Testing + Deploy Back-End | Incomplete |
-| Nov 8     | Working on React Front-End                                 | Incomplete |
-| Nov 9     | Working Prototype + CSS Styling                            | Incomplete |
+| Nov 5 - 6 | Create Back-End + Deploy Back-End                          |  Complete  |
+| Nov 7     | Continue Back-End + Testing + Develop Front-End Components | Incomplete |
+| Nov 8     | React Front-End MVP + CSS Styling                          | Incomplete |
+| Nov 9     | Refine CSS and proceed with Post-MVP Improvements          | Incomplete |
 | Nov 10    | Present and Celebrate                                      | Incomplete |
