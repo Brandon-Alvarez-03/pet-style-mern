@@ -38,14 +38,12 @@
 }
 
 .CTAButton:hover {
-  background-color: #00bd5e;
+  background-color: #00BD5E;
   transition: 200ms ease-in-out;
   cursor: pointer;
 }
 
-.choosePet,
-.categoriesContainer,
-.help {
+.choosePet, .categoriesContainer, .help {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -56,7 +54,7 @@
 }
 
 .help {
-  background-color: #0392d9;
+  background-color: #0392D9;
   color: white;
   font-weight: bold;
   padding: 15px;
@@ -64,19 +62,12 @@
 }
 
 .description {
-  background-color: #0392d9;
+  background-color: #0392D9;
   color: white;
   padding: 50px;
 }
 
-.chooseCat,
-.chooseDog,
-.chooseAll,
-.collars,
-.leashes,
-.help-1,
-.help-2,
-.help-3 {
+.chooseCat, .chooseDog, .chooseAll, .collars, .leashes, .help-1, .help-2, .help-3 {
   /* position: relative;
   text-align: center; */
   margin: 20px;
@@ -87,11 +78,7 @@
   flex-direction: column;
 }
 
-.chooseCatImg,
-.chooseDogImg,
-.chooseAllImg,
-.collarPic,
-.leashPic {
+.chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic, .leashPic {
   border-radius: 50%;
   /* height: 100%;
   width: 50%; */
@@ -100,18 +87,12 @@
   border: black solid 1px;
 }
 
-.chooseCatImg:hover,
-.chooseDogImg:hover,
-.chooseAllImg:hover,
-.collarPic:hover,
-.leashPic:hover {
+.chooseCatImg:hover, .chooseDogImg:hover, .chooseAllImg:hover, .collarPic:hover, .leashPic:hover {
   cursor: pointer;
 }
 
-.shopCats,
-.shopDogs,
-.shopAll {
-  background-color: #0392d9;
+.shopCats, .shopDogs, .shopAll {
+  background-color: #0392D9;
   color: white;
   border: white;
   font-weight: bold;
@@ -120,10 +101,8 @@
   border-radius: 8px;
 }
 
-.shopCats:hover,
-.shopDogs:hover,
-.shopAll:hover {
-  background-color: #00bd5e;
+.shopCats:hover, .shopDogs:hover, .shopAll:hover {
+  background-color: #00BD5E;
   transition: 200ms ease-in-out;
   cursor: pointer;
 }
@@ -133,7 +112,7 @@
     position: relative;
     text-align: center;
   }
-
+ 
   .CTA {
     position: absolute;
     top: 5%;
@@ -141,7 +120,7 @@
     transform: translate(-50%, -50%);
     font-size: 1.2em;
   }
-
+  
   .CTAButton {
     position: absolute;
     bottom: 8%;
@@ -153,7 +132,7 @@
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
-    font-size: 0.9em;
+    font-size: .9em;
   }
 
   .landingImage {
@@ -162,23 +141,16 @@
 
   .description {
     padding: 30px;
-    font-size: 0.9em;
+    font-size: .9em;
   }
 
-  .chooseCatImg,
-  .chooseDogImg,
-  .chooseAllImg,
-  .collarPic {
+  .chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic {
     border-radius: 50%;
     width: 200px;
     height: 200px;
   }
 
-  .chooseCat,
-  .chooseDog,
-  .chooseAll,
-  .collars,
-  .leashes {
+  .chooseCat, .chooseDog, .chooseAll, .collars, .leashes {
     position: relative;
     text-align: center;
     margin: 10px;
@@ -186,10 +158,8 @@
     height: 300px;
   }
 
-  .shopCats,
-  .shopDogs,
-  .shopAll {
-    background-color: #0392d9;
+  .shopCats, .shopDogs, .shopAll {
+    background-color: #0392D9;
     color: white;
     border: white;
     font-weight: bold;
@@ -197,4 +167,5 @@
     margin-top: 30px;
     font-size: 1.3em;
   }
+  
 }

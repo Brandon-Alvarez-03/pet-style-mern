@@ -8,12 +8,13 @@ import Cart from "../screens/Cart.jsx";
 import Home from "../screens/Home/Home.jsx";
 import Login from "../screens/Login.jsx";
 
-function Main({productFilteredData, setProductFilteredData, setProductData}) {
+
+function Main() {
   return (
     <div className="main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products/:all" element={<Products productFilteredData={productFilteredData} setProductFilteredData={setProductFilteredData} setProductData={setProductData}/>} />
+        <Route path="/products/:all" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/emptycart" element={<EmptyCart />} />
         {/* <Route path="/checkout" element={<Checkout />} />

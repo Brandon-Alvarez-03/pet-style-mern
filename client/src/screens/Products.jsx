@@ -5,16 +5,9 @@ import {useParams} from "react-router-dom";
 function Products() {
   const [productData, setProductData] = useState([]);
 
-
-  // The useEffect() hook fires any time that the component is rendered.
-  // An empty array is passed as the second argument so that the effect only fires once.
-
   const routeParams = useParams();
   const endpoint = routeParams.all;
 
-  console.log(productData);
-  // console.log(endpoint)
-  console.log(routeParams);
   const addToCart = (product) => {
     console.log(product);
     let cartList = [];
@@ -35,9 +28,10 @@ function Products() {
   useEffect(() => {
     axios
       .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
-      .then((response) => setProductData(response.data))
-      // .then((response) => setProductFilteredData(response.data))
+      .then((response) => setProductData(response.data));
+    // .then((response) => setProductFilteredData(response.data))
   }, []);
+  console.log(productData);
 
   return (
     <div className="product-cards">
