@@ -4,7 +4,7 @@ import {useParams} from "react-router-dom";
 
 function Products() {
   const [productData, setProductData] = useState([]);
-  // const [loading, setLoading] = useState(true);
+
 
   // The useEffect() hook fires any time that the component is rendered.
   // An empty array is passed as the second argument so that the effect only fires once.
@@ -32,23 +32,13 @@ function Products() {
     }
   };
 
-  // const sendGetRequest = async () => {
-  //   try {
-  //     const resp = await axios(`https://pet-lyfe-api.up.railway.app/products/${endpoint}}`);
-  //     setProductData(resp.data);
-  //   } catch (err) {
-  //     // Handle Error Here
-  //     console.error(err);
-  //   }
-  // };
-
   useEffect(() => {
     axios
       .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
-      .then((response) => setProductData(response.data));
+      .then((response) => setProductData(response.data))
+      .then((response) => setProductFilteredData(response.data))
   }, []);
 
-  // if (!loading) {
   return (
     <div className="product-cards">
       {productData.map((product, index) => {
@@ -74,6 +64,5 @@ function Products() {
     </div>
   );
 }
-// }
 
 export default Products;
