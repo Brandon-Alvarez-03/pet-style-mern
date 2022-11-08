@@ -18,7 +18,7 @@ function Home() {
           src={mainPic}
         />
         <h2 className="CTA">Spoil your fur baby.</h2>
-        <Link to="/products">
+        <Link to="/products/all">
           <button className="CTAButton">Shop Now</button>
         </Link>
       </div>
@@ -30,8 +30,12 @@ function Home() {
       <h2>Choose Your Pet</h2>
       <div className="choosePet">
         <div className="chooseCat">
-          <img className="chooseCatImg" alt="sleeping cat" src={catPic} />
-          <button className="shopCats">Shop Cats</button>
+          <Link to="/products/cat">
+            <img className="chooseCatImg" alt="sleeping cat" src={catPic} />
+          </Link>
+          <Link to="/products/cat">
+            <button className="shopCats">Shop Cats</button>
+          </Link>
         </div>
         <div className="chooseDog">
           <img
@@ -39,14 +43,16 @@ function Home() {
             alt="dog wearing sunglasses"
             src={dogPic}
           />
-          <button className="shopDogs">Shop Dogs</button>
+          <Link to="/products/dog">
+            <button className="shopDogs">Shop Dogs</button>
+          </Link>
         </div>
 
         <div className="chooseAll">
           <Link to="/products">
             <img className="chooseAllImg" alt="cat and dog" src={allPic} />
           </Link>
-          <Link to="/products">
+          <Link to="/products/all">
             <button className="shopAll">Shop All</button>
           </Link>
         </div>
