@@ -1,0 +1,171 @@
+.homeScreen {
+  background-color: white;
+  margin: 0 auto;
+}
+
+.homeImage {
+  position: relative;
+  text-align: center;
+  border-top: white 4px solid;
+}
+
+.landingImage {
+  width: 100%;
+}
+
+.CTA {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: white;
+}
+
+.CTAButton {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  color: white;
+  border: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 15px;
+  font-size: 1.4em;
+  border-radius: 8px;
+}
+
+.CTAButton:hover {
+  background-color: #00BD5E;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.choosePet, .categoriesContainer, .help {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+
+.help {
+  background-color: #0392D9;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+}
+
+.description {
+  background-color: #0392D9;
+  color: white;
+  padding: 50px;
+}
+
+.chooseCat, .chooseDog, .chooseAll, .collars, .leashes, .help-1, .help-2, .help-3 {
+  /* position: relative;
+  text-align: center; */
+  margin: 20px;
+  /* display: block; */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic, .leashPic {
+  border-radius: 50%;
+  /* height: 100%;
+  width: 50%; */
+  height: 200px;
+  width: 200px;
+  border: black solid 1px;
+}
+
+.chooseCatImg:hover, .chooseDogImg:hover, .chooseAllImg:hover, .collarPic:hover, .leashPic:hover {
+  cursor: pointer;
+}
+
+.shopCats, .shopDogs, .shopAll {
+  background-color: #0392D9;
+  color: white;
+  border: white;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.shopCats:hover, .shopDogs:hover, .shopAll:hover {
+  background-color: #00BD5E;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .homeImage {
+    position: relative;
+    text-align: center;
+  }
+ 
+  .CTA {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+  }
+  
+  .CTAButton {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    border: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: .9em;
+  }
+
+  .landingImage {
+    width: 100%;
+  }
+
+  .description {
+    padding: 30px;
+    font-size: .9em;
+  }
+
+  .chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+  }
+
+  .chooseCat, .chooseDog, .chooseAll, .collars, .leashes {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
+  }
+
+  .shopCats, .shopDogs, .shopAll {
+    background-color: #0392D9;
+    color: white;
+    border: white;
+    font-weight: bold;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 1.3em;
+  }
+  
+}

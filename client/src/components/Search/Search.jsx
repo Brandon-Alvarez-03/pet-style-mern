@@ -1,22 +1,29 @@
-import React from 'react'
-import Css from "./search.css"
+import React from "react";
+import Css from "./search.css";
 
-const Search = ({ query, setQuery }) => {
+const Search = ({ query, setQuery, productData, setProductFilteredData }) => {
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+
+    let filteredData = productData.filter((product) => {
+      return product.product_name.toLowerCase().includes(query.toLowerCase());
+    });
+
+    setProductFilteredData(filteredData);
+  };
 
   return (
-    <section className='search'>
-      <form>
-        <input
-          type='text'
-          className='form-control'
-          placeholder='Search characters'
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          autoFocus
-        />
-      </form>
+    <section className="search">
+      <input
+        type="text"
+        className="form-control"
+        placeholder="Search  Products"
+        value={query}
+        onChange={handleChange}
+        autoFocus
+      />
     </section>
-  )
-}
+  );
+};
 
-export default Search
+export default Search;

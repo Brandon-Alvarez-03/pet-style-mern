@@ -1,16 +1,33 @@
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useRef} from "react";
 import axios from "axios";
-import Search from "../components/Search/Search.jsx"
 
-function Products() {
-  const [productData, setProductData] = useState([]);
+function Products({productFilteredData, setProductFilteredData, setProductData}) {
   const [loading, setLoading] = useState(true);
-  const [query, setQuery] = useState("");
+
+  // const addToCart = useRef();
+
+  const addToCart = (product) => {
+    console.log(product);
+    let cartList = [];
+
+    const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    console.log(getCurrentCart)
+
+    if (getCurrentCart.length) {
+      cartList = getCurrentCart;
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    } else {
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    }
+  };
 
   const sendGetRequest = async () => {
     try {
-      const resp = await axios(`https://pet-lyfe-api.up.railway.app?name=${query}`);
+      const resp = await axios(`https://pet-lyfe-api.up.railway.app`);
       setProductData(resp.data);
+      setProductFilteredData(resp.data);
     } catch (err) {
       // Handle Error Here
       console.error(err);
@@ -20,12 +37,11 @@ function Products() {
     sendGetRequest();
     setLoading(false);
   }, []);
-  console.log(productData);
 
   if (!loading) {
     return (
       <div className="product-cards">
-        {productData.map((product, index) => {
+        {productFilteredData.map((product, index) => {
           return (
             <div key={index} className="product-card">
               <img
@@ -36,6 +52,12 @@ function Products() {
               <p>{product.product_name}</p>
               <p>Price: {product.retail_price}</p>
               <p>Rating: {product.rating}</p>
+              <button
+                className="add-to-cart-button"
+                onClick={() => addToCart(product)}
+              >
+                Add to Cart
+              </button>
             </div>
           );
         })}
