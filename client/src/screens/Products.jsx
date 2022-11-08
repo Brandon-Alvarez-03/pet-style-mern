@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import './Products.css';
 
 function Products() {
   const [productData, setProductData] = useState([]);
@@ -22,7 +23,11 @@ function Products() {
 
   if (!loading) {
     return (
-      <div className="product-cards">
+      <div className="product-page">
+          <h3 className="all-products">All Products</h3>
+  
+
+        <div className="products-container">
         {productData.map((product, index) => {
           return (
             <div key={index} className="product-card">
@@ -31,12 +36,14 @@ function Products() {
                 src={product.img_thumb}
                 alt={product.name}
               />
-              <p>{product.product_name}</p>
-              <p>Price: {product.retail_price}</p>
-              <p>Rating: {product.rating}</p>
+              <h3 className="product-name">{product.product_name}</h3>
+              <p className="rating">Customer Rating: {product.rating}/5</p>
+              <p className="price">${product.retail_price}</p>
+              <button className="add-to-cart">Add to Cart</button>
             </div>
           );
         })}
+          </div>
       </div>
     );
   }

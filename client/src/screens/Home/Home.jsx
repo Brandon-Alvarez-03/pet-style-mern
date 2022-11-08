@@ -18,7 +18,7 @@ function Home() {
       </div>
 
       <div className='description'>
-        <h3>Your pet slid into our DMs. They said buy whatever you want.</h3>
+        <h3>Your pet slid into our DMs. 📲 They said buy whatever you want.</h3>
       </div>
       
       <h2>Choose Your Pet</h2>

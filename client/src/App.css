@@ -36,7 +36,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightgoldenrodyellow;
+  background-color: white;
   color: #121212;
   margin-bottom: 15px;
 }
@@ -52,38 +52,7 @@
   color: #121212;
 }
 
-.product-cards {
-  grid-area: main;
-  background-color: lightgray;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  /* align-items: center; */
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
 
-.product-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* justify-content: center; */
-  background-color: silver;
-  color: #121212;
-  font-size: smaller;
-  width: 240px;
-  margin: 10px 0 10px 0;
-}
-
-.product-image {
-  width: 90%;
-  margin-bottom: 10px;
-}
-
-.product-card p {
-  margin: auto;
-}
 
 .back-shop {
 cursor: pointer;

@@ -5,6 +5,7 @@ import Products from "../screens/Products.jsx";
 import Cart from "../screens/Cart.jsx";
 import Checkout from "../screens/Checkout.jsx";
 import Home from "../screens/Home/Home.jsx";
+import ProductDetail from "../screens/ProductDetail/ProductDetail.jsx";
 
 function Main() {
   return (
@@ -15,6 +16,7 @@ function Main() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/emptycart" element={<EmptyCart />} />
+        <Route path="/product-details" element={<ProductDetail />} />
       </Routes>
     </div>
   );
