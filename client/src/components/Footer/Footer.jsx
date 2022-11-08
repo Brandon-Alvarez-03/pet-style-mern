@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Translogo from "../../images/logos/PetLyfe-logo-removebg.png"
 import "./Footer.css"
 import pawsLogo from "../../images/logos/PetLyfe-paws.png"
+import CopyrightIcon from '@mui/icons-material/Copyright';
 
 function Footer() {
 
@@ -33,8 +34,11 @@ function Footer() {
 
   return <div className="footer">
     <img className="footer-logo" alt='PetLyfe-logo' src={Translogo} />
-    <div className="footer-about">
+    <div className="footer-about-copy">
       <h2>About Us!</h2>
+      <div className="copyright-icon">
+        <CopyrightIcon /> <h6>PetLyfe 2022</h6>
+        </div>
     </div>
     <img className="footer-paws" alt='PetLyfe-Paws' src={pawsLogo} onClick={scrollToTop} />
   </div>;
