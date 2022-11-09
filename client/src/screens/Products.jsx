@@ -13,7 +13,7 @@ function Products() {
     let cartList = [];
 
     const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
-    console.log(getCurrentCart)
+    console.log(getCurrentCart);
 
     if (getCurrentCart.length) {
       cartList = getCurrentCart;
@@ -30,7 +30,6 @@ function Products() {
       .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
       .then((response) => setProductData(response.data));
   }, []);
-
 
   return (
     <div className="product-cards">
