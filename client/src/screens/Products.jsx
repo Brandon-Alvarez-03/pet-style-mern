@@ -1,27 +1,37 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import './Products.css';
+import {useParams} from "react-router-dom";
 
 function Products() {
   const [productData, setProductData] = useState([]);
-  const [loading, setLoading] = useState(true);
 
-  const sendGetRequest = async () => {
-    try {
-      const resp = await axios("https://pet-lyfe-api.up.railway.app/");
-      setProductData(resp.data);
-    } catch (err) {
-      // Handle Error Here
-      console.error(err);
+  const routeParams = useParams();
+  const endpoint = routeParams.all;
+
+  const addToCart = (product) => {
+    console.log(product);
+    let cartList = [];
+
+    const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    console.log(getCurrentCart)
+
+    if (getCurrentCart.length) {
+      cartList = getCurrentCart;
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    } else {
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
     }
   };
-  useEffect(() => {
-    sendGetRequest();
-    setLoading(false);
-  }, []);
-  console.log(productData);
 
-  if (!loading) {
+  useEffect(() => {
+    axios
+      .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
+      .then((response) => setProductData(response.data));
+  }, []);
+
     return (
       <div className="product-page">
           <h3 className="all-products">All Products</h3>
@@ -46,7 +56,7 @@ function Products() {
           </div>
       </div>
     );
-  }
+
 }
 
 export default Products;

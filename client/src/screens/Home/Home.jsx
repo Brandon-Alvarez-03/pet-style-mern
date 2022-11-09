@@ -8,6 +8,7 @@ import catClothes from '../../images/categories/cat-clothes.jpg';
 import dogToys from '../../images/categories/dog-toys.jpg';
 import dogClothes from '../../images/categories/dog-clothes.jpg';
 import './Home.css';
+
 import {Link} from "react-router-dom";
 
 function Home() {
@@ -88,6 +89,7 @@ function Home() {
         <p className='help-1'>We're happy to help! 👋</p>
         <p className='help-2'>☎️ 1-800-PET-LYFE</p>
         <p className='help-3'>📧 help@petlyfe.com</p>
+
       </div>
     </div>
   );

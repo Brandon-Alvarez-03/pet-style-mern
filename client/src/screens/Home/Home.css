@@ -72,6 +72,7 @@
   padding: 50px;
 }
 
+
 .chooseCat, .chooseDog, .chooseAll, .cat-toys, .cat-clothes, .dog-toys, .dog-clothes, .help-1, .help-2, .help-3 {
   /* position: relative;
   text-align: center; */
@@ -105,6 +106,7 @@
   margin-top: 15px;
   border-radius: 8px;
   font-size: 1em;
+
 }
 
 .shopCats:hover, .shopDogs:hover, .shopAll:hover {
