@@ -21,6 +21,7 @@ function Main() {
         <Route path="/emptycart" element={<EmptyCart />} />
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/emptycart" element={<EmptyCart />} />
       </Routes>
     </div>
   );
