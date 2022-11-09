@@ -1,6 +1,7 @@
+
 .footer-logo {
-  height: 55px;
-  width: 110px;
+  height: 90px;
+  width: 145px;
   transition: transform 50ms ease-in-out;
   cursor: pointer;
 }
@@ -16,6 +17,8 @@
   padding: 10px;
   padding-left: 40px;
   height: 150px;
+  background-color: black;
+  color: white;
 }
 
 .footer > h2 {
@@ -27,6 +30,7 @@
   width: 60px;
   cursor: pointer;
   transition: transform 50ms ease-in-out;
+  margin-right: 25px;
 }
 
 .footer-about-copy {
@@ -57,3 +61,8 @@ transform: scale(1.2);
   margin: 20px;
   cursor: pointer;
 }
+
+.footer-middle > div:hover {
+  transform: scale(1.5);
+}
+
