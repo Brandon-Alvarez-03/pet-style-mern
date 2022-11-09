@@ -6,6 +6,8 @@ import "./App.css";
 import SignIn from "./screens/Sign-In/SignIn.jsx";
 import SignUp from "./screens/Sign-Up/SignUp.jsx";
 import Products from "./screens/Products.jsx";
+import EmptyCart from "./screens/Empty-Cart/EmptyCart.jsx";
+import Home from "./screens/Home/Home.jsx";
 
 function App() {
   return (
