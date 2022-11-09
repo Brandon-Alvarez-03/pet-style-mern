@@ -37,7 +37,7 @@ function Products() {
 
   return (
       <div className="product-page">
-        <h1 className="all-products">Dog Products</h1>
+        {/* <h1 className="all-products">Dog Products</h1>
         <div className="nav-products">
         <div className="filter-by-pet">
           <Link to="/products/all">
@@ -64,7 +64,7 @@ function Products() {
             <h4 id="dog-clothes">Dog Clothes</h4>
           </Link>
           </div>
-          </div> 
+          </div>  */}
 
       <div className="products-container">
         {productData.map((product, index) => {
