@@ -4,6 +4,7 @@ import logo from "../../images/logos/PetLyfe-logo-removebg.png";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
+import PersonIcon from '@mui/icons-material/Person';
 
 
 function Nav() {
@@ -24,7 +25,8 @@ function Nav() {
            <button className="signup">Sign Up</button>
             </Link>
             <Link to="/login">
-              <button className="login">Login</button>
+              {/* <button className="login">Login</button> */}
+              <PersonIcon />
               </Link>
             </div>
           <div className="cart-container">
