@@ -95,7 +95,9 @@ function Checkout() {
         </Link>
       </div>
       <div>
-        <button className="checkout-btn"> Checkout</button>
+        <Link to="/thankyou">
+          <button className="checkout-btn"> Checkout</button>
+        </Link>
       </div>
     </div>
   );
