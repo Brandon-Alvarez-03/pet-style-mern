@@ -1,0 +1,142 @@
+.product-page {
+  margin: 0 auto;
+}
+
+.all-products {
+  margin-inline: 0;
+  font-size: 1.4em;
+}
+
+.products-container {
+  grid-area: main;
+  background-color: white;
+  /* width: 100vw; */
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  background-color: white;
+  color: #121212;
+  font-size: smaller;
+  height: 541px;
+  width: 240px;
+  /* margin: 20px 0 20px 0; */
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.product-image {
+  width: 100%;
+  margin-bottom: 10px;
+  border: black 1px solid;
+}
+
+.product-name {
+  min-height: 36px;
+  
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.rating {
+
+}
+
+.add-to-cart {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  background-color: #00BD5E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.add-to-cart:hover {
+ background-color: #0392D9;
+ transition: 200ms ease-in-out;
+ cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+.product-page {
+  margin: 0 auto;
+}
+
+.all-products {
+  margin: 20px;
+}
+
+.products-container {
+  grid-area: main;
+  background-color: white;
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #121212;
+  font-size: smaller;
+  width: 240px;
+  margin: 20px 0 20px 0;
+  /* margin: 0 auto; */
+}
+
+.product-image {
+  width: 100%;
+  margin-bottom: 10px;
+  border: black 1px solid;
+}
+
+.product-name {
+  height: 36px;
+}
+
+.price {
+  color: red;
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.rating {
+
+}
+
+.add-to-cart {
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  background-color: #00BD5E;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+}

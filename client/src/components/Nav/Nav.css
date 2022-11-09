@@ -54,4 +54,13 @@ font-weight: 500;
 .cart-container > .MuiSvgIcon-root {
   height:40px;
   width: 40px;
+
 }
+
+@media screen and (max-width: 768px) {
+  .cart-container {
+    margin-right: 50px;
+  }
+  
+}
+
