@@ -18,7 +18,7 @@ function Home() {
       <div className='homeImage'>
         <img className='landingImage' alt='cats and dogs with pink background' src={mainPic} />
         <h2 className='CTA'>Spoil your fur baby.</h2>
-        <Link to="/products">
+        <Link to="/products/all">
           <button className='CTAButton'>Shop Now</button>
         </Link>
       </div>
@@ -48,10 +48,10 @@ function Home() {
           </Link> 
         </div>
         <div className='chooseAll'>
-          <Link to="/products">
+          <Link to="/products/all">
             <img className='chooseAllImg' alt='cat and dog' src={allPic} />
           </Link>
-          <Link to="/products">
+          <Link to="/products/all">
           <button className='shopAll'>Shop All</button>
           </Link>
         </div>
