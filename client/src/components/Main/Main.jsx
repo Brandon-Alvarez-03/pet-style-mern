@@ -1,5 +1,5 @@
 import React from "react";
-import EmptyCart from "../../screens/EmptyCart.jsx";
+import EmptyCart from "../../screens/Empty-Cart/EmptyCart.jsx";
 import {Routes, Route} from "react-router-dom";
 import Products from "../../screens/Products.jsx";
 import Cart from "../../screens/Cart.jsx";
