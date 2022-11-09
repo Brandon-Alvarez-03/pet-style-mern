@@ -31,7 +31,11 @@ function ProductDetail() {
     return (
       <div className='product-container'>
         <div className='product-pic'>
-
+        <img
+                className="product-image"
+                src={product_id.img_thumb}
+                alt={product_id.name}
+              />
         </div>
         <div className='product-info'>
         <div className='productTitle'>Product Title</div>
