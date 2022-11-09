@@ -12,10 +12,10 @@ function Main() {
     <div className="main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products/:all" element={<Products />} />
+        <Route path="/products/:animal" element={<Products />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/emptycart" element={<EmptyCart />} />
-        <Route path="/products/details" element={<ProductDetail />} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
     </div>
   );

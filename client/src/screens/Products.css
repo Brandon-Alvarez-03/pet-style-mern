@@ -7,6 +7,37 @@
   font-size: 1.4em;
 }
 
+.nav-products {
+  background-color: #0392D9;
+  padding: 10px;
+}
+
+.filter-by-pet, .filter-by-category {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  flex-direction: row;
+  
+  color: white;
+  padding: 0px 20px;
+}
+
+#all-pets, #cats, #dogs, #cat-toys, #cat-clothes, #dog-toys, #dog-clothes {
+  color: white;
+  margin: 10px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#all-pets:hover, #cats:hover, #dogs:hover, #cat-toys:hover, #cat-clothes:hover, #dog-toys:hover, #dog-clothes:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: white;
+}
+
 .products-container {
   grid-area: main;
   background-color: white;
@@ -25,15 +56,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
   background-color: white;
   color: #121212;
-  font-size: smaller;
   height: 541px;
   width: 240px;
-  /* margin: 20px 0 20px 0; */
+  margin: 10px;
+  border: black 1px solid;
+  border-radius: 8px;
   padding: 20px;
-  margin: 0 auto;
+}
+
+.product-card:hover {
+  cursor: pointer;
 }
 
 .product-image {
@@ -43,18 +78,23 @@
 }
 
 .product-name {
-  min-height: 36px;
-  
+  min-height: 1em;
+  font-size: .9em;
+  font-weight: bold;
+  margin: 10px;
 }
 
 .price {
   color: red;
   font-weight: bold;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  margin: 10px;
 }
 
 .rating {
-
+  font-size: .9em;
+  margin: 5px;
+  padding-top: 10px;
 }
 
 .add-to-cart {
@@ -64,13 +104,32 @@
   background-color: #00BD5E;
   color: white;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.2em;
+  margin: 15px;
 }
 
 .add-to-cart:hover {
- background-color: #0392D9;
+ /* background-color: #0392D9; */
  transition: 200ms ease-in-out;
  cursor: pointer;
+ transform: scale(1.10);
+}
+
+.view-more {
+  border-radius: 8px;
+  border: none;
+  padding: 8px;
+  background-color: #0392D9;
+  color: white;
+  font-weight: bold;
+  font-size: .9em;
+  margin: 5px;
+}
+
+.view-more:hover {
+  background-color: grey;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -105,7 +164,7 @@
   color: #121212;
   font-size: smaller;
   width: 240px;
-  margin: 20px 0 20px 0;
+  /* margin: 20px 0 20px 0; */
   /* margin: 0 auto; */
 }
 
@@ -117,16 +176,20 @@
 
 .product-name {
   height: 36px;
+  font-size: 1em;
+  margin: 10px;
 }
 
 .price {
   color: red;
   font-weight: bold;
   font-size: 1.4em;
+  margin: 5px;
 }
 
 .rating {
-
+  margin: 5px;
+  font-size: 1em;
 }
 
 .add-to-cart {
@@ -137,6 +200,11 @@
   color: white;
   font-weight: bold;
   font-size: 1.3em;
+  margin: 10px;
+}
+
+.view-more {
+
 }
 
 }
