@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import "./Products.css";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 function Products() {
   const [productData, setProductData] = useState([]);
@@ -41,7 +41,7 @@ function Products() {
       <div className="products-container">
         {productData.map((product, index) => {
           return (
-            <div key={index} className="product-card">
+            <div key={index} className="product-card" id={product._id}>
               <img
                 className="product-image"
                 src={product.img_thumb}
@@ -56,6 +56,9 @@ function Products() {
               >
                 Add to Cart
               </button>
+              <Link to={`/product/${product._id}`}>
+                <button className="add-to-cart">See More</button>
+              </Link>
             </div>
           );
         })}
