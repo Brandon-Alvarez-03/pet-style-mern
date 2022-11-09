@@ -86,18 +86,6 @@
   margin: auto;
 }
 
-.back-shop {
-cursor: pointer;
-transition: transform 50ms ease-in-out
-}
-
-.back-shop:hover {
-  transform: scale(1.2);
-}
-
-.empty-cart {
-  background-color: white;
-}
 
 .product-image:hover {
   cursor: pointer;
