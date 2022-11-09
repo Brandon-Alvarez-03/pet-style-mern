@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
 .back-shop {
   cursor: pointer;
-  transition: transform 50ms ease-in-out
-  }
+  transition: transform 50ms ease-in-out;
+  font-size: 15px;
+  font-family: 'Rubik Bubbles', cursive;  
+}
   
   .back-shop:hover {
     transform: scale(1.2);
