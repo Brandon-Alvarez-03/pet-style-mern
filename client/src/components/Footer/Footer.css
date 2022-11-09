@@ -7,17 +7,15 @@
 }
 
 .footer {
-   background-color: #FFDE50; 
   display: flex;
   grid-area: ft;
-  background-color: lightpink;
   color: #121212;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
   padding-left: 40px;
   height: 150px;
-  background-color: black;
+  background-color: rgba(60, 122, 137,0.9); 
   color: white;
 }
 
@@ -31,14 +29,6 @@
   cursor: pointer;
   transition: transform 50ms ease-in-out;
   margin-right: 25px;
-}
-
-.footer-about-copy {
-  opacity: 1;
-  font-weight: 300;
-  cursor: pointer;
-  transition: transform 50ms ease-in-out;
-  font-family: CircularSp-Cyrl;
 }
 
 .footer-logo:hover {
