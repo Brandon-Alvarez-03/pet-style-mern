@@ -1,26 +1,31 @@
 .homeScreen {
-  /* background-color: #0392D9; */
+  background-color: white;
+  margin: 0 auto;
 }
 
 .homeImage {
   position: relative;
   text-align: center;
+  border-top: white 4px solid;
 }
 
 .landingImage {
   width: 100%;
+
 }
 
 .CTA {
   position: absolute;
-  top: 10%;
+  top: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 2.5em;
+  color: white;
 }
 
 .CTAButton {
   position: absolute;
-  bottom: 8%;
+  bottom: 5%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: red;
@@ -28,7 +33,9 @@
   border: white;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 10px;
+  padding: 15px;
+  font-size: 1.6em;
+  border-radius: 8px;
 }
 
 .CTAButton:hover {
@@ -37,7 +44,7 @@
   cursor: pointer;
 }
 
-.choosePet {
+.choosePet, .categoriesContainer, .help {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -47,31 +54,62 @@
   align-content: center;
 }
 
-.chooseCat, .chooseDog, .chooseAll {
+.categoriesContainer {
+  margin: 30px;
+}
+
+.help {
+  background-color: #0392D9;
+  color: white;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+}
+
+.description {
+  background-color: #0392D9;
+  color: white;
+  padding: 50px;
+}
+
+
+.chooseCat, .chooseDog, .chooseAll, .cat-toys, .cat-clothes, .dog-toys, .dog-clothes, .help-1, .help-2, .help-3 {
   /* position: relative;
   text-align: center; */
   margin: 20px;
-  display: block;
+  /* display: block; */
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-.chooseCatImg, .chooseDogImg, .chooseAllImg {
+.chooseCatImg, .chooseDogImg, .chooseAllImg, .cat-toy-pic, .cat-clothes-pic, .dog-toy-pic, .dog-clothes-pic {
   border-radius: 50%;
-  height: 100%;
-  width: 50%;
+  /* height: 100%;
+  width: 50%; */
+  height: 200px;
+  width: 200px;
+  border: black solid 1px;
 }
 
-.shopCats, .shopDogs, .shopAll {
+.chooseCatImg:hover, .chooseDogImg:hover, .chooseAllImg:hover, .cat-toy-pic:hover, .cat-clothes-pic:hover, .dog-toy-pic:hover, .dog-clothes-pic:hover {
+  cursor: pointer;
+}
+
+.shopCats, .shopDogs, .shopAll, .category-button {
   background-color: #0392D9;
   color: white;
   border: white;
   font-weight: bold;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 15px;
+  border-radius: 8px;
+  font-size: 1em;
+
 }
 
-.shopCats:hover, .shopDogs:hover, .shopAll:hover {
+.shopCats:hover, .shopDogs:hover, .shopAll:hover, .category-button:hover {
   background-color: #00BD5E;
   transition: 200ms ease-in-out;
   cursor: pointer;
@@ -85,9 +123,10 @@
  
   .CTA {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 1.2em;
   }
   
   .CTAButton {
@@ -101,22 +140,30 @@
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px;
+    font-size: .9em;
   }
 
-  .landImage {
+  .landingImage {
     width: 100%;
   }
 
-  .chooseCatImg, .chooseDogImg, .chooseAllImg {
-    width: 100%;
+  .description {
+    padding: 30px;
+    font-size: .9em;
+  }
+
+  .chooseCatImg, .chooseDogImg, .chooseAllImg, .collarPic {
     border-radius: 50%;
-    height: 100%;
+    width: 200px;
+    height: 200px;
   }
 
-  .chooseCat, .chooseDog, .chooseAll {
+  .chooseCat, .chooseDog, .chooseAll, .collars, .leashes {
     position: relative;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
+    width: 300px;
+    height: 300px;
   }
 
   .shopCats, .shopDogs, .shopAll {
@@ -125,7 +172,8 @@
     border: white;
     font-weight: bold;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 30px;
+    font-size: 1.3em;
   }
   
 }

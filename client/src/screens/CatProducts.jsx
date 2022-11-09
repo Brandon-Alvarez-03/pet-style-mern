@@ -7,7 +7,9 @@ function Products() {
   const [productData, setProductData] = useState([]);
 
   const routeParams = useParams();
-  const endpoint = routeParams.all;
+  const endpoint = routeParams.category;
+  console.log(routeParams);
+  console.log(endpoint);
 
   const addToCart = (product) => {
     console.log(product);
@@ -29,40 +31,41 @@ function Products() {
   useEffect(() => {
     axios
       // /cats/toys
-      .get(`https://pet-lyfe.up.railway.app/products/${endpoint}`)
+      .get(`https://pet-lyfe.up.railway.app/products/cat/${endpoint}`)
       .then((response) => setProductData(response.data));
   }, []);
 
   return (
     <div className="product-page">
-      {/* //   <h1 className="all-products">All Products</h1>
-      //   <div className="nav-products">
-      //   <div className="filter-by-pet">
-      //     <Link to="/products/all">
-      //       <h4 id="all-pets">All Pets</h4>
-      //     </Link>
-      //     <Link to="/products/cat">
-      //       <h4 id="cats">Cats</h4>
-      //     </Link>
-      //     <Link to="/products/dog">
-      //       <h4 id="dogs">Dogs</h4>
-      //     </Link>
-      //   </div>
-      //   <div className="filter-by-category">
-      //     <Link to="/products/cat/toys">
-      //       <h4 id="cat-toys">Cat Toys</h4>
-      //     </Link>  
-      //     <Link to="/products/cat/clothes">
-      //     <h4 id="cat-clothes">Cat Clothes</h4>
-      //     </Link>
-      //     <Link to="/products/dog/toys">
-      //       <h4 id="dog-toys">Dog Toys</h4>
-      //     </Link>
-      //     <Link to="/products/dog/clothes">
-      //       <h4 id="dog-clothes">Dog Clothes</h4>
-      //     </Link>
-      //     </div>
-      //     </div> */}
+    {/* <h1 className="all-products">Cat Products</h1>
+    <div className="nav-products">
+    <div className="filter-by-pet">
+      <Link to="/products/all">
+        <h4 id="all-pets">All Pets</h4>
+      </Link>
+      <Link to="/products/cat">
+        <h4 id="cats">Cats</h4>
+      </Link>
+      <Link to="/products/dog">
+        <h4 id="dogs">Dogs</h4>
+      </Link>
+    </div>
+    <div className="filter-by-category">
+      <Link to="/products/cat/toys">
+        <h4 id="cat-toys">Cat Toys</h4>
+      </Link>  
+      <Link to="/products/cat/clothes">
+      <h4 id="cat-clothes">Cat Clothes</h4>
+      </Link>
+      <Link to="/products/dog/toys">
+        <h4 id="dog-toys">Dog Toys</h4>
+      </Link>
+      <Link to="/products/dog/clothes">
+        <h4 id="dog-clothes">Dog Clothes</h4>
+      </Link>
+      </div>
+      </div>  */}
+
 
       <div className="products-container">
         {productData.map((product, index) => {
@@ -73,10 +76,10 @@ function Products() {
                 src={product.img_thumb}
                 alt={product.name}
               />
-              {/* <Link to={`/product/${product._id}`}>
+              <Link to={`/product/${product._id}`}>
                 <button className="view-more">View More</button>
-              </Link> */}
-              <p className="product-name">{product.product_name}</p>
+              </Link>
+              <h3 className="product-name">{product.product_name}</h3>
               <p className="rating">Customer Rating: {product.rating}/5</p>
               <p className="price">${product.retail_price}</p>
               <button
@@ -85,6 +88,9 @@ function Products() {
               >
                 Add to Cart
               </button>
+              {/* <Link to={`/product/${product._id}`}>
+                <button className="add-to-cart">See More</button>
+              </Link> */}
             </div>
           );
         })}

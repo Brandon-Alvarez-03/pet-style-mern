@@ -8,6 +8,7 @@
   padding: 10px;
   padding-left: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .nav > h2 {
@@ -50,10 +51,67 @@ font-weight: 500;
   transform: scale(1.2);
 }
 
-.cart-container > .MuiSvgIcon-root {
-  height:40px;
-  width: 40px;
+.css-i4bv87-MuiSvgIcon-root {
+font-size: 40px !important;
+margin-right: 20px;
+margin-top: 7px;
+display: flex;
+justify-content: center;
 }
 
+.ham-menu-icon {
+transition: transform 50ms ease-in-out;
+}
 
+.ham-menu-icon:hover {
+  transform: scale(1.2);
+}
 
+@media only screen and (max-width:480px) {
+
+  .ham-menu-icon {
+    display:flex;
+    
+  }
+}
+
+@media only screen and (min-width:480px) {
+  .ham-menu-icon {
+    display: none !important;
+  }
+
+  
+}
+
+.signup {
+  margin-top: 15px;
+  transition: 0.3s;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+.signup:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.login {
+  cursor: pointer;
+}
+
+.login:hover {
+  transform: scale(1.3);
+}
+
+.cart-container {
+  display: flex;
+}
+
+#person-icon {
+  transition: transform 50ms ease-in-out;
+}
+
+#person-icon:hover {
+transform: scale(1.2);
+}
