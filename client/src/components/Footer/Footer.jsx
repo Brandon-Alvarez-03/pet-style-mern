@@ -3,6 +3,7 @@ import Translogo from "../../images/logos/PetLyfe-logo-removebg.png";
 import "./Footer.css";
 import pawsLogo from "../../images/logos/PetLyfe-paws.png";
 import GitLogo from "../../images/logos/GitHub32px.png";
+import { Link } from "react-router-dom"
 
 
 function Footer() {
@@ -46,7 +47,9 @@ function Footer() {
 
   return (
     <div className="footer">
-      <img className="footer-logo" alt="PetLyfe-logo" src={Translogo} />
+      <Link to="/">
+        <img className="footer-logo" alt="PetLyfe-logo" src={Translogo} />
+        </Link>
       <div className="footer-middle">
         <div className="sandy-git">
         <h3>Sandy C.</h3>
