@@ -97,7 +97,7 @@
   cursor: pointer;
 }
 
-.shopCats, .shopDogs, .shopAll {
+.shopCats, .shopDogs, .shopAll, .category-button {
   background-color: #0392D9;
   color: white;
   border: white;
@@ -109,7 +109,7 @@
 
 }
 
-.shopCats:hover, .shopDogs:hover, .shopAll:hover {
+.shopCats:hover, .shopDogs:hover, .shopAll:hover, .category-button:hover {
   background-color: #00BD5E;
   transition: 200ms ease-in-out;
   cursor: pointer;

@@ -2,8 +2,8 @@ import React from "react";
 import EmptyCart from "../screens/EmptyCart.jsx";
 import {Routes, Route} from "react-router-dom";
 import Products from "../screens/Products.jsx";
-import CatProducts from "../screens/CatProducts.jsx";
-import DogProducts from "../screens/DogProducts.jsx";
+import CatProducts from "../screens/CatProducts.jsx"
+import DogProducts from "../screens/DogProducts.jsx"
 import Cart from "../screens/Cart.jsx";
 import Home from "../screens/Home/Home.jsx";
 import ProductDetail from "../screens/ProductDetail/ProductDetail.jsx";
@@ -14,7 +14,7 @@ function Main() {
     <div className="main">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/products/:animal" element={<Products />} />
+        <Route path="/products/:all" element={<Products />} />
         <Route path="/products/cat/:category" element={<CatProducts />} />
         <Route path="/products/dog/:category" element={<DogProducts />} />
         <Route path="/cart" element={<Cart />} />

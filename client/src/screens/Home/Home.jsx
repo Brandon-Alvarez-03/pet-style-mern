@@ -62,26 +62,34 @@ function Home() {
         <div className='cat-toys'>
         <Link to="/products/cat/toys">
             <img className='cat-toy-pic' alt='cat toy' src={catToys} />
-            </Link>
-          <h3>Cat Toys</h3>
+          </Link>
+          <Link to="/products/cat/toys">
+          <button className='category-button'>Cat Toys</button>
+          </Link>
         </div>
         <div className='cat-clothes'>
         <Link to="/products/cat/clothes">
             <img className='cat-clothes-pic' alt='cat clothes' src={catClothes} />
+          </Link>
+          <Link to="/products/cat/clothes">
+            <button className='category-button'>Cat Clothes</button>
             </Link>
-          <h3>Cat Clothes</h3>
         </div>
         <div className='dog-toys'>
         <Link to="/products/dog/toys">
             <img className='dog-toy-pic' alt='dog toy' src={dogToys} />
-            </Link>
-          <h3>Dog Toys</h3>
+          </Link>
+          <Link to="/products/dog/toys">
+          <button className='category-button'>Dog Toys</button>
+          </Link>
         </div>
         <div className='dog-clothes'>
         <Link to="/products/dog/clothes">
             <img className='dog-clothes-pic' alt='dog clothes' src={dogClothes} />
-            </Link>
-          <h3>Dog Clothes</h3>
+          </Link>
+          <Link to="/products/dog/clothes">
+          <button className='category-button'>Dog Clothes</button>
+          </Link>
         </div>
       </div>
 
