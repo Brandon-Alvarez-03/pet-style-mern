@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
+import './Products.css';
 import {useParams} from "react-router-dom";
 
 function Products() {
@@ -31,31 +32,31 @@ function Products() {
       .then((response) => setProductData(response.data));
   }, []);
 
+    return (
+      <div className="product-page">
+          <h3 className="all-products">All Products</h3>
+  
 
-  return (
-    <div className="product-cards">
-      {productData.map((product, index) => {
-        return (
-          <div key={index} className="product-card">
-            <img
-              className="product-image"
-              src={product.img_thumb}
-              alt={product.name}
-            />
-            <p>{product.product_name}</p>
-            <p>Price: {product.retail_price}</p>
-            <p>Rating: {product.rating}</p>
-            <button
-              className="add-to-cart-button"
-              onClick={() => addToCart(product)}
-            >
-              Add to Cart
-            </button>
+        <div className="products-container">
+        {productData.map((product, index) => {
+          return (
+            <div key={index} className="product-card">
+              <img
+                className="product-image"
+                src={product.img_thumb}
+                alt={product.name}
+              />
+              <h3 className="product-name">{product.product_name}</h3>
+              <p className="rating">Customer Rating: {product.rating}/5</p>
+              <p className="price">${product.retail_price}</p>
+              <button className="add-to-cart">Add to Cart</button>
+            </div>
+          );
+        })}
           </div>
-        );
-      })}
-    </div>
-  );
+      </div>
+    );
+
 }
 
 export default Products;
