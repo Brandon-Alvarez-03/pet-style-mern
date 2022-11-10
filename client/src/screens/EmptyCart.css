@@ -1,0 +1,46 @@
+.back-shop {
+  margin: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: white;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 30%;
+  align-self: center;
+}
+
+.back-shop:hover {
+  background-color: #00bd5e;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.empty-cart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+
+.sadPets {
+  width: 70%;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: lightblue;
+  }
+  .sadPets {
+    width: 70%;
+    align-items: center;
+    padding: 10px;
+  }
+  .back-shop {
+    width: 30%;
+  }
+}
