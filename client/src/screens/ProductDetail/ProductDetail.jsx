@@ -25,6 +25,23 @@ function ProductDetail() {
   }, [product_id]);
   console.log(productData);
 
+  const addToCart = (product) => {
+    console.log(product);
+    let cartList = [];
+
+    const getCurrentCart = JSON.parse(localStorage.getItem("cart") || "[]");
+    console.log(getCurrentCart);
+
+    if (getCurrentCart.length) {
+      cartList = getCurrentCart;
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    } else {
+      cartList.push(product);
+      localStorage.setItem("cart", JSON.stringify(cartList));
+    }
+  };
+
   return (
     <div className="product-container">
       <img
@@ -37,7 +54,9 @@ function ProductDetail() {
         <div className="price">{productData.price}</div>
         <div className="salePrice">{productData.sale_price}</div>
         <div className="rating">{productData.rating}/5</div>
-        <button className="addToCart">Add to Cart</button>
+        <button className="addToCart" onClick={() => addToCart(productData)}>
+          Add to Cart
+        </button>
       </div>
     </div>
   );
