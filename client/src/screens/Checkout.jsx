@@ -1,5 +1,3 @@
-import React from "react";
-import {useLayoutEffect} from "react";
 import "./Checkout.css";
 // import logo from "../../images/logos/PetLyfe-brandmark-removebg.png";
 import {Link} from "react-router-dom";
