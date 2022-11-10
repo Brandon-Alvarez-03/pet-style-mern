@@ -57,7 +57,7 @@ function Cart() {
                   </div>
                   <div className="cart-text">
                     <p>{product.product_name}</p>
-                    <p>Price: {product.retail_price}</p>
+                    <p>Price: ${product.retail_price}</p>
                     <p>Rating: {product.rating}</p>
                   </div>
                   <button

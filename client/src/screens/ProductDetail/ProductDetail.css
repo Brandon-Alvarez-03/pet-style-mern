@@ -1,94 +1,41 @@
-
-@media screen and (max-width: 768px) {
-  .container {
-    grid-area: main;
-    background-color: white;
-    width: 100vw;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
-
-  .product-image {
-    /* height: 300px;
-    width: 100%;
-    margin-bottom: 10px;
-    border: black 1px solid;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    display: flex;
-  flex-direction: column;
-  align-items: center;
+.product-main {
+  display: flex;
   justify-content: center;
-  background-color: white;
-  color: #121212;
-  font-size: smaller;
-  width: 240px;
-
-  }
-
-  .info-container {
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: white;
-  color: #121212;
-  font-size: smaller;
-  width: 240px;
-  }
+}
 
-  .info-border {
-    border: black 1px solid;
-    border-radius: 8px;
-    padding: 20px;
-  }
+.product-container {
+  width: 40%;
+  margin: 30px;
+  padding: 30px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 10px;
+}
 
-  .product-name {
-    height: 36px;
-    font-size: 1.2em;
-    margin: 10px;
-  }
+.addToCart {
+  margin: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  border: white;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 30%;
+  align-self: center;
+}
 
-  .price {
-    color: red;
-    font-weight: bold;
-    font-size: 2em;
-    margin: 5px;
-  }
+.addToCart:hover {
+  background-color: #00bd5e;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+}
 
-  .rating {
-    margin: 5px;
-    font-size: 1em;
-  }
+.salePrice{
+  font-size: 20px;
+  color: #0392D9;
 
-  .add-to-cart {
-    border-radius: 8px;
-    border: none;
-    padding: 10px;
-    background-color: #00BD5E;
-    color: white;
-    font-weight: bold;
-    font-size: 2em;
-    margin: 10px;
-  }
+}
 
-  .keep-browsing {
-    border-radius: 8px;
-    border: none;
-    padding: 10px;
-    background-color: grey;
-    color: white;
-    font-weight: bold;
-    font-size: 1.1em;
-    margin-bottom: 30px;
-  }
-
+.product-image{
+  width: 70%;
 }
