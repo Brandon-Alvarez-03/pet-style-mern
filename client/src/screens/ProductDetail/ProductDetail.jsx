@@ -1,7 +1,5 @@
-import React from "react";
 import "./ProductDetail.css";
 import axios from "axios";
-
 import {useState, useEffect} from "react";
 import {useParams} from "react-router-dom";
 
@@ -24,14 +22,14 @@ function ProductDetail() {
   };
   useEffect(() => {
     sendGetRequest();
-  }, []);
+  }, [product_id]);
   console.log(productData);
 
   return (
     <div className="product-container">
       <img
         className="product-image"
-        src={productData.img_thumb}
+        src={productData.img_url}
         alt={productData.name}
       />
       <div className="product-info">

@@ -1,10 +1,10 @@
-import React, { useState, useEffect, isValidElement } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import React, {useState, useEffect, isValidElement} from "react";
+import {useNavigate, Link} from "react-router-dom";
 import "../Cart.css";
 
 function Cart() {
   const [cart, setCart] = useState([]);
-  const [toggle, setToggle] = useState(false)
+  const [toggle, setToggle] = useState(false);
   const [sum, setSum] = useState(0);
   const navigate = useNavigate();
 
@@ -19,24 +19,24 @@ function Cart() {
   }, [toggle]);
 
   useEffect(() => {
-    addItUp()
-  }, [cart])
+    addItUp();
+  }, [cart]);
 
   function addItUp() {
     return setSum(
-      cart.reduce((sum, product) => sum + parseFloat(product.retail_price), 0)
+      cart
+        .reduce((sum, product) => sum + parseFloat(product.retail_price), 0)
+        .toFixed(2)
     );
   }
 
   function handleRemove(product) {
-
     let updatedCart = cart.filter((currentProduct) => {
-      return currentProduct._id !== product._id
-    })
+      return currentProduct._id !== product._id;
+    });
 
     localStorage.setItem("cart", JSON.stringify(updatedCart));
-    setToggle(prev => !prev)
-
+    setToggle((prev) => !prev);
   }
 
   return (
@@ -60,10 +60,13 @@ function Cart() {
                     <p>Price: {product.retail_price}</p>
                     <p>Rating: {product.rating}</p>
                   </div>
-                  <button className="cart-button" onClick={() => handleRemove(product)}>Remove From Cart</button>
+                  <button
+                    className="cart-button"
+                    onClick={() => handleRemove(product)}
+                  >
+                    Remove From Cart
+                  </button>
                 </div>
-              
-                
               </>
             );
           })}
