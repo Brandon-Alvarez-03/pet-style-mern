@@ -41,7 +41,6 @@ a:link {
 .products-container {
   grid-area: main;
   background-color: white;
-  /* width: 100vw; */
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -109,7 +108,6 @@ a:link {
 }
 
 .add-to-cart:hover {
- /* background-color: #0392D9; */
  transition: 200ms ease-in-out;
  cursor: pointer;
  transform: scale(1.10);
@@ -164,8 +162,6 @@ a:link {
   color: #121212;
   font-size: smaller;
   width: 240px;
-  /* margin: 20px 0 20px 0; */
-  /* margin: 0 auto; */
 }
 
 .product-image {
@@ -202,9 +198,4 @@ a:link {
   font-size: 1.3em;
   margin: 10px;
 }
-
-.view-more {
-
-}
-
 }
