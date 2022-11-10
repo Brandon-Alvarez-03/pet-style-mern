@@ -73,9 +73,9 @@ function Products() {
                 src={product.img_thumb}
                 alt={product.name}
               />
-              {/* <Link to={`/product/${product._id}`}>
+              <Link to={`/product/${product._id}`}>
                 <button className="view-more">View More</button>
-              </Link> */}
+              </Link>
               <p className="product-name">{product.product_name}</p>
               <p className="rating">Customer Rating: {product.rating}/5</p>
               <p className="price">${product.retail_price}</p>

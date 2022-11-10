@@ -7,7 +7,8 @@ import DogProducts from "../screens/DogProducts.jsx"
 import Cart from "../screens/Cart.jsx";
 import Home from "../screens/Home/Home.jsx";
 import ProductDetail from "../screens/ProductDetail/ProductDetail.jsx";
-import Checkout from "../screens/checkout/Checkout.jsx";
+import Checkout from "../screens/Checkout.jsx";
+import ThankYou from "../screens/ThankYou.jsx";
 
 function Main() {
   return (
@@ -22,6 +23,7 @@ function Main() {
         <Route path="/product/:id" element={<ProductDetail />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/emptycart" element={<EmptyCart />} />
+        <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
     </div>
   );

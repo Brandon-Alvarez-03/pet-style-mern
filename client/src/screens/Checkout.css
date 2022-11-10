@@ -1,0 +1,126 @@
+.checkout-img {
+  width: 30%;
+ 
+}
+/* 
+.checkout{
+  text-align: center;
+  display: grid;
+ justify-content: center;
+} */
+
+
+ .checkout-btn {
+  margin: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: white;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 30%;
+  align-self: center;
+  width: 30%;
+}
+
+.checkout-h1 {
+    font-size: 20px;
+  }
+  .checkout-info {
+    font-size: 20px; 
+  }
+
+.checkout #total {
+  width: 40px;
+}
+.checkout-cart-btn{
+  margin: 10px;
+  padding: 10px;
+  background-color:green;
+  color: white;
+  border: white;
+  border-radius: 8px;
+  font-weight: bold;
+  height: 30%;
+  align-self: center;
+  width: 30%;
+}
+
+.checkout img {
+  height: 20%;
+  width: 20%;
+}
+
+ .checkout-container {
+  display: grid;
+  justify-content: center;
+}
+
+.field__input {
+  -webkit-appearance: none;
+  padding: 5px;
+  margin: 10px;
+}
+.checkout-p-tags{
+  font-size: 18px;
+}
+.checkout-total{
+  font-size: 18px;
+}
+
+@media screen and (min-width: 500px) {
+  .checkout-img{
+    height: 20%;
+  width: 15%;
+  }
+  
+  .checkout-info {
+    font-size: 20px; 
+  }
+
+  .checkout-h1 {
+    font-size: 20px;
+  }
+  .checkout p{
+    font-size: 10px;  
+  }
+  .checkout-cart-btn{
+    margin: 10px;
+    padding: 10px;
+    background-color:green;
+    color: white;
+    border: white;
+    border-radius: 8px;
+    font-weight: bold;
+    height: 30%;
+    align-self: center;
+    width: 30%;
+  }
+  .checkout-cart-btn:hover {
+    background-color: rgb(35, 173, 35) ;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  
+  .checkout-btn  {
+    margin: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: white;
+    border-radius: 8px;
+    font-weight: bold;
+    height: 30%;
+    align-self: center;
+    width: 30%;
+  }
+  .checkout-btn:hover {
+    background-color: rgb(41, 40, 40);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+  }
+  .checkout-container {
+    display: grid;
+    justify-content: center;
+  }
+}
